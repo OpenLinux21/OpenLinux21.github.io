@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>系外行星 on 南极洲企鹅领地</title>
+    <link>http://localhost:1313/tags/%E7%B3%BB%E5%A4%96%E8%A1%8C%E6%98%9F/</link>
+    <description>Recent content in 系外行星 on 南极洲企鹅领地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>openlinux21@outlook.com (MoriTsukiKawa)</managingEditor>
+    <webMaster>openlinux21@outlook.com (MoriTsukiKawa)</webMaster>
+    <copyright>© 2025 MoriTsukiKawa</copyright>
+    <lastBuildDate>Thu, 15 May 2025 15:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%B3%BB%E5%A4%96%E8%A1%8C%E6%98%9F/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>NASA确认首次发现系外行星上的生命迹象</title>
+      <link>http://localhost:1313/posts/202505/15/nasa-exoplanet-life/</link>
+      <pubDate>Thu, 15 May 2025 15:00:00 +0800</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>http://localhost:1313/posts/202505/15/nasa-exoplanet-life/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>JWST发现最远古系外行星：距地球5000光年</title>
+      <link>http://localhost:1313/posts/202502/20/jwst-exoplanet-discovery/</link>
+      <pubDate>Thu, 20 Feb 2025 16:00:00 +0800</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>http://localhost:1313/posts/202502/20/jwst-exoplanet-discovery/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

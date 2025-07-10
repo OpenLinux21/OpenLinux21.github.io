@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>天文 on 南极洲企鹅领地</title>
+    <link>http://localhost:1313/tags/%E5%A4%A9%E6%96%87/</link>
+    <description>Recent content in 天文 on 南极洲企鹅领地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>openlinux21@outlook.com (MoriTsukiKawa)</managingEditor>
+    <webMaster>openlinux21@outlook.com (MoriTsukiKawa)</webMaster>
+    <copyright>© 2025 MoriTsukiKawa</copyright>
+    <lastBuildDate>Tue, 10 Jun 2025 13:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%A4%A9%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>火星探测器发现地下冰川遗迹</title>
+      <link>http://localhost:1313/posts/202506/10/mars-glacier-discovery/</link>
+      <pubDate>Tue, 10 Jun 2025 13:00:00 +0800</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>http://localhost:1313/posts/202506/10/mars-glacier-discovery/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>NASA确认首次发现系外行星上的生命迹象</title>
+      <link>http://localhost:1313/posts/202505/15/nasa-exoplanet-life/</link>
+      <pubDate>Thu, 15 May 2025 15:00:00 +0800</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>http://localhost:1313/posts/202505/15/nasa-exoplanet-life/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>水星凌日：2025年罕见天文奇观</title>
+      <link>http://localhost:1313/posts/202504/10/mercury-transit/</link>
+      <pubDate>Thu, 10 Apr 2025 09:00:00 +0800</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>http://localhost:1313/posts/202504/10/mercury-transit/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>JWST发现最远古系外行星：距地球5000光年</title>
+      <link>http://localhost:1313/posts/202502/20/jwst-exoplanet-discovery/</link>
+      <pubDate>Thu, 20 Feb 2025 16:00:00 +0800</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>http://localhost:1313/posts/202502/20/jwst-exoplanet-discovery/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>双子座流星雨2024年绽放夜空</title>
+      <link>http://localhost:1313/posts/202412/14/geminids-meteor-shower/</link>
+      <pubDate>Sat, 14 Dec 2024 08:00:00 +0800</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>http://localhost:1313/posts/202412/14/geminids-meteor-shower/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>2024年10月北美日偏食：天空的奇妙演出</title>
+      <link>http://localhost:1313/posts/202410/15/partial-solar-eclipse/</link>
+      <pubDate>Tue, 15 Oct 2024 10:00:00 +0800</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>http://localhost:1313/posts/202410/15/partial-solar-eclipse/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
