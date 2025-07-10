@@ -21,5 +21,15 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202507/10/feature.jpg" />
     </item>
     
+    <item>
+      <title>openSUSE 正在决定是否终止对 32 位 ARM 设备的支持</title>
+      <link>https://openlinux21.github.io/posts/202507/10-p2/</link>
+      <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/posts/202507/10-p2/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202507/10-p2/feature.jpg" />
+    </item>
+    
   </channel>
 </rss>

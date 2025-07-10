@@ -12,11 +12,31 @@
     <lastBuildDate>Thu, 10 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>ARM</title>
+      <link>https://openlinux21.github.io/tags/arm/</link>
+      <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/arm/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Linux</title>
       <link>https://openlinux21.github.io/tags/linux/</link>
       <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
       <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
       <guid>https://openlinux21.github.io/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SUSE</title>
+      <link>https://openlinux21.github.io/tags/suse/</link>
+      <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/suse/</guid>
       <description></description>
       
     </item>
