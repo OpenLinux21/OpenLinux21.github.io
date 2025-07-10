@@ -629,6 +629,32 @@
 这份初见，如同故事刚刚翻开的扉页，虽然简单，却令人难忘。</p>
 <p>回头看，这或许就是——<strong>梦开始的地方。</strong></p>
 <hr>
+<div id="love-timer" style="font-weight:bold; font-size:1.1em; margin: 16px 0;"></div>
+<script>
+(function() {
+  // 起始时间：2024-09-21 18:30:00（UTC+8）
+  const start = new Date('2024-09-21T10:30:00Z'); // UTC时间
+  function pad(n) { return n < 10 ? '0' + n : n; }
+  function updateTimer() {
+    const now = new Date();
+    let diff = Math.floor((now - start) / 1000);
+    const years = Math.floor(diff / (365 * 24 * 3600));
+    diff -= years * 365 * 24 * 3600;
+    const months = Math.floor(diff / (30 * 24 * 3600));
+    diff -= months * 30 * 24 * 3600;
+    const days = Math.floor(diff / (24 * 3600));
+    diff -= days * 24 * 3600;
+    const hours = Math.floor(diff / 3600);
+    diff -= hours * 3600;
+    const minutes = Math.floor(diff / 60);
+    const seconds = diff - minutes * 60;
+    document.getElementById('love-timer').textContent =
+      `我们已经认识${years}年${months}月${days}日${pad(hours)}小时${pad(minutes)}分钟${pad(seconds)}秒了！`;
+  }
+  updateTimer();
+  setInterval(updateTimer, 1000);
+})();
+</script>
 <blockquote>
 <p>每段故事的开头，都是平凡的一天。<br>
 而这一天，是我们的。</p>
