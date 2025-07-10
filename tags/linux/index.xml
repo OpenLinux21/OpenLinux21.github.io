@@ -31,5 +31,15 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202507/10-p2/feature.jpg" />
     </item>
     
+    <item>
+      <title>Wayback 现已托管于 FreeDesktop.org</title>
+      <link>https://openlinux21.github.io/posts/202507/09/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/posts/202507/09/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202507/09/feature.jpg" />
+    </item>
+    
   </channel>
 </rss>

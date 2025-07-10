@@ -27,6 +27,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://openlinux21.github.io/posts/202507/09/</loc>
+    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openlinux21.github.io/posts/202506/27/</loc>
+    <lastmod>2025-06-27T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://openlinux21.github.io/posts/202505/16/</loc>
     <lastmod>2025-05-16T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
