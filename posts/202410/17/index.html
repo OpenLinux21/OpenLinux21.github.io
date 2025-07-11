@@ -129,7 +129,7 @@
   
   
   
-  <link href="https://openlinux21.github.io" rel="me" />
+  <link href="https://www.pixiv.net/users/85945118" rel="me" />
   
   
   
@@ -525,7 +525,7 @@
       
         <a
           class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
-          href="https://openlinux21.github.io"
+          href="https://www.pixiv.net/users/85945118"
           target="_blank"
           aria-label="Link"
           rel="me noopener noreferrer"
@@ -904,14 +904,56 @@
     
 
   </div>
+  <div id="dynamic-times" class="flex flex-col gap-1 mt-2" style="font-size:12px;">
+    <span id="halley"></span>
+    <span id="site-age"></span>
+    <span id="owner-age"></span>
+    <span id="year-end"></span>
+  </div>
   <script>
-    
-    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
-      margin: 24,
-      background: 'rgba(0,0,0,0.5)',
-      scrollOffset: 0,
-    })
-    
+    function formatDuration(ms, prefix) {
+      let totalSeconds = Math.floor(Math.abs(ms) / 1000);
+      const years = Math.floor(totalSeconds / (365.2425 * 24 * 3600));
+      totalSeconds -= Math.floor(years * 365.2425 * 24 * 3600);
+      const months = Math.floor(totalSeconds / (30.44 * 24 * 3600));
+      totalSeconds -= Math.floor(months * 30.44 * 24 * 3600);
+      const days = Math.floor(totalSeconds / (24 * 3600));
+      totalSeconds -= days * 24 * 3600;
+      const hours = Math.floor(totalSeconds / 3600);
+      totalSeconds -= hours * 3600;
+      const minutes = Math.floor(totalSeconds / 60);
+      const seconds = totalSeconds - minutes * 60;
+      return `${prefix}${years}年${months}月${days}日${hours}小时${minutes}分钟${seconds}秒`;
+    }
+    function getNextHalley(now) {
+      
+      const last = new Date(Date.UTC(1986, 1, 9, 0, 0, 0));
+      const period = 75.32 * 365.2425 * 24 * 3600 * 1000;
+      let next = last.getTime();
+      while (next <= now.getTime()) next += period;
+      return new Date(next);
+    }
+    function updateTimes() {
+      const now = new Date();
+      
+      const nextHalley = getNextHalley(now);
+      const halleyMs = nextHalley - now;
+      document.getElementById('halley').textContent = formatDuration(halleyMs, '距离下次哈雷彗星回归还有:');
+      
+      const siteStart = new Date(Date.UTC(2018, 9, 20, 0, 30, 15));
+      const siteMs = now - siteStart;
+      document.getElementById('site-age').textContent = formatDuration(siteMs, '本站已运行:');
+      
+      const ownerStart = new Date(Date.UTC(2008, 9, 24, 13, 39, 5));
+      const ownerMs = now - ownerStart;
+      document.getElementById('owner-age').textContent = formatDuration(ownerMs, '站主已经在这个世界玩了:');
+      
+      const yearEnd = new Date(Date.UTC(now.getFullYear(), 11, 31, 16, 0, 0)); 
+      const yearEndMs = yearEnd - now;
+      document.getElementById('year-end').textContent = formatDuration(yearEndMs, '距离今年结束还有:');
+    }
+    updateTimes();
+    setInterval(updateTimes, 1000);
   </script> 
   
   <script
