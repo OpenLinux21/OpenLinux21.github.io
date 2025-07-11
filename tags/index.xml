@@ -9,7 +9,27 @@
     <managingEditor>openlinux21@outlook.com (MoriTsukiKawa)</managingEditor>
     <webMaster>openlinux21@outlook.com (MoriTsukiKawa)</webMaster>
     <copyright>© 2025 MoriTsukiKawa</copyright>
-    <lastBuildDate>Thu, 10 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Linux</title>
+      <link>https://openlinux21.github.io/tags/linux/</link>
+      <pubDate>Fri, 11 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>驱动</title>
+      <link>https://openlinux21.github.io/tags/%E9%A9%B1%E5%8A%A8/</link>
+      <pubDate>Fri, 11 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/%E9%A9%B1%E5%8A%A8/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>ARM</title>
@@ -17,16 +37,6 @@
       <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
       <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
       <guid>https://openlinux21.github.io/tags/arm/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://openlinux21.github.io/tags/linux/</link>
-      <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
-      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
-      <guid>https://openlinux21.github.io/tags/linux/</guid>
       <description></description>
       
     </item>
@@ -62,16 +72,6 @@
     </item>
     
     <item>
-      <title>驱动</title>
-      <link>https://openlinux21.github.io/tags/%E9%A9%B1%E5%8A%A8/</link>
-      <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
-      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
-      <guid>https://openlinux21.github.io/tags/%E9%A9%B1%E5%8A%A8/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Wayback</title>
       <link>https://openlinux21.github.io/tags/wayback/</link>
       <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
@@ -97,6 +97,46 @@
       <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
       <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
       <guid>https://openlinux21.github.io/tags/x11/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>GNOME</title>
+      <link>https://openlinux21.github.io/tags/gnome/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/gnome/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>AMD</title>
+      <link>https://openlinux21.github.io/tags/amd/</link>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/amd/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Steam</title>
+      <link>https://openlinux21.github.io/tags/steam/</link>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/steam/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>游戏</title>
+      <link>https://openlinux21.github.io/tags/%E6%B8%B8%E6%88%8F/</link>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/%E6%B8%B8%E6%88%8F/</guid>
       <description></description>
       
     </item>

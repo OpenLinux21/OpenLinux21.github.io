@@ -9,7 +9,17 @@
     <managingEditor>openlinux21@outlook.com (MoriTsukiKawa)</managingEditor>
     <webMaster>openlinux21@outlook.com (MoriTsukiKawa)</webMaster>
     <copyright>© 2025 MoriTsukiKawa</copyright>
-    <lastBuildDate>Thu, 10 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>英特尔为 Linux 6.17 准备重大图形驱动更新：多设备支持准备、SR-IOV、WCL</title>
+      <link>https://openlinux21.github.io/posts/202507/11/</link>
+      <pubDate>Fri, 11 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/posts/202507/11/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202507/11/feature.jpg" />
+    </item>
     
     <item>
       <title>Linux 6.17 看来要放弃 pktcdvd 包写入 CD/DVD 驱动程序了</title>
@@ -49,6 +59,26 @@
       <guid>https://openlinux21.github.io/posts/202507/09/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202507/09/feature.jpg" />
+    </item>
+    
+    <item>
+      <title>GNOME 49 Alpha 发布，默认禁用 X11 支持，并新增多项功能</title>
+      <link>https://openlinux21.github.io/posts/202507/07/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/posts/202507/07/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202507/07/feature.jpg" />
+    </item>
+    
+    <item>
+      <title>Linux 平台 Steam 用户使用率在 6 月略有下降，AMD CPU 在 Linux 上的使用率达到 69%</title>
+      <link>https://openlinux21.github.io/posts/202507/02/</link>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/posts/202507/02/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202507/02/feature.jpg" />
     </item>
     
     <item>

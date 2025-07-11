@@ -3,6 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://openlinux21.github.io/posts/</loc>
+    <lastmod>2025-07-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openlinux21.github.io/</loc>
+    <lastmod>2025-07-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openlinux21.github.io/posts/202507/11/</loc>
+    <lastmod>2025-07-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://openlinux21.github.io/posts/202507/10/</loc>
     <lastmod>2025-07-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -15,19 +33,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://openlinux21.github.io/posts/</loc>
-    <lastmod>2025-07-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://openlinux21.github.io/posts/202507/10-p3/</loc>
-    <lastmod>2025-07-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://openlinux21.github.io/</loc>
     <lastmod>2025-07-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -35,6 +41,18 @@
   <url>
     <loc>https://openlinux21.github.io/posts/202507/09/</loc>
     <lastmod>2025-07-09T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openlinux21.github.io/posts/202507/07/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openlinux21.github.io/posts/202507/02/</loc>
+    <lastmod>2025-07-02T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
