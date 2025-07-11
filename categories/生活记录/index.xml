@@ -21,5 +21,15 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202507/10-p3/feature.jpg" />
     </item>
     
+    <item>
+      <title>上海游记之Apple Store(6.15)</title>
+      <link>https://openlinux21.github.io/posts/202506/15/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/posts/202506/15/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202506/15/feature.jpg" />
+    </item>
+    
   </channel>
 </rss>
