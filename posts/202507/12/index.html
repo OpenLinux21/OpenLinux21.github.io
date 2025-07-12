@@ -12,14 +12,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>英特尔为 Linux 6.17 准备重大图形驱动更新：多设备支持准备、SR-IOV、WCL &middot; 南极企鹅领地</title>
-  <meta name="title" content="英特尔为 Linux 6.17 准备重大图形驱动更新：多设备支持准备、SR-IOV、WCL &middot; 南极企鹅领地" />
+  <title>攻击向量控制有望在 Linux 6.17 引入 &middot; 南极企鹅领地</title>
+  <meta name="title" content="攻击向量控制有望在 Linux 6.17 引入 &middot; 南极企鹅领地" />
   
   <meta name="description" content="我的小小博客" />
-  <meta name="keywords" content="Linux, 驱动, " />
+  <meta name="keywords" content="Linux, 驱动, AMD, CPU, " />
   
   
-  <link rel="canonical" href="https://openlinux21.github.io/posts/202507/11/" />
+  <link rel="canonical" href="https://openlinux21.github.io/posts/202507/12/" />
   
   
   
@@ -68,23 +68,25 @@
   
   
   
-  <meta property="og:url" content="https://openlinux21.github.io/posts/202507/11/">
+  <meta property="og:url" content="https://openlinux21.github.io/posts/202507/12/">
   <meta property="og:site_name" content="南极企鹅领地">
-  <meta property="og:title" content="英特尔为 Linux 6.17 准备重大图形驱动更新：多设备支持准备、SR-IOV、WCL">
+  <meta property="og:title" content="攻击向量控制有望在 Linux 6.17 引入">
   <meta property="og:description" content="我的小小博客">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-07-11T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-07-11T00:00:00+00:00">
+    <meta property="article:published_time" content="2025-07-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-07-12T00:00:00+00:00">
     <meta property="article:tag" content="Linux">
     <meta property="article:tag" content="驱动">
-    <meta property="og:image" content="https://openlinux21.github.io/posts/202507/11/feature.jpg">
+    <meta property="article:tag" content="AMD">
+    <meta property="article:tag" content="CPU">
+    <meta property="og:image" content="https://openlinux21.github.io/posts/202507/12/feature.png">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://openlinux21.github.io/posts/202507/11/feature.jpg">
-  <meta name="twitter:title" content="英特尔为 Linux 6.17 准备重大图形驱动更新：多设备支持准备、SR-IOV、WCL">
+  <meta name="twitter:image" content="https://openlinux21.github.io/posts/202507/12/feature.png">
+  <meta name="twitter:title" content="攻击向量控制有望在 Linux 6.17 引入">
   <meta name="twitter:description" content="我的小小博客">
 
   
@@ -93,26 +95,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "英特尔为 Linux 6.17 准备重大图形驱动更新：多设备支持准备、SR-IOV、WCL",
-    "headline": "英特尔为 Linux 6.17 准备重大图形驱动更新：多设备支持准备、SR-IOV、WCL",
+    "name": "攻击向量控制有望在 Linux 6.17 引入",
+    "headline": "攻击向量控制有望在 Linux 6.17 引入",
     
     
     "inLanguage": "en",
-    "url" : "https:\/\/openlinux21.github.io\/posts\/202507\/11\/",
+    "url" : "https:\/\/openlinux21.github.io\/posts\/202507\/12\/",
     "author" : {
       "@type": "Person",
       "name": "MoriTsukiKawa"
     },
     "copyrightYear": "2025",
-    "dateCreated": "2025-07-11T00:00:00\u002b00:00",
-    "datePublished": "2025-07-11T00:00:00\u002b00:00",
+    "dateCreated": "2025-07-12T00:00:00\u002b00:00",
+    "datePublished": "2025-07-12T00:00:00\u002b00:00",
     
-    "dateModified": "2025-07-11T00:00:00\u002b00:00",
+    "dateModified": "2025-07-12T00:00:00\u002b00:00",
     
-    "keywords": ["Linux","驱动"],
+    "keywords": ["Linux","驱动","AMD","CPU"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "159"
+    "wordCount": "62"
   }]
   </script>
 
@@ -362,7 +364,7 @@
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/posts/202507/11/feature_hu_ac9d5c5d74494aa1.jpg);">
+    style="background-image:url(/posts/202507/12/feature_hu_af63dfb4c6ebdc29.png);">
     
 
 
@@ -385,7 +387,7 @@
     <header id="single_header" class="mt-5 max-w-prose">
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        英特尔为 Linux 6.17 准备重大图形驱动更新：多设备支持准备、SR-IOV、WCL
+        攻击向量控制有望在 Linux 6.17 引入
       </h1>
       <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -438,7 +440,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-07-11T00:00:00&#43;00:00">2025/07/11</time><span class="px-2 text-primary-500">&middot;</span><span>159 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+      <time datetime="2025-07-12T00:00:00&#43;00:00">2025/07/12</time><span class="px-2 text-primary-500">&middot;</span><span>62 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
     
 
     
@@ -621,16 +623,19 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>英特尔即将在即将到来的 <a
-  href="https://www.phoronix.com/search/Linux&#43;6.17"
+          <blockquote>
+<p><strong>AMD 工程团队主导的 <a
+  href="https://www.phoronix.com/search/Attack&#43;Vector&#43;Controls"
     target="_blank"
-  >Linux 6.17</a>
- 内核周期中，为其现代化的 “Xe” 内核图形驱动带来一系列重大改进。包括对新硬件的支持、Battlemage 的 SR-IOV 虚拟化准备、其他 Battlemage 相关工作，以及即将到来的多设备支持的准备工作。</p>
-<p>本周晚些时候，英特尔提交了最新的 drm-xe-next 拉取请求，为 Linux 6.17 周期排队了更多新特性。Linux 6.17 的合并窗口预计将在 7 月底或 8 月初开启，具体取决于 6.16 周期的进展。Linux 6.17 稳定版预计将在 10 月初发布，届时将为 Ubuntu 25.10 等发行版提供支持。目前，已经有 <a
-  href="https://www.phoronix.com/news/Intel-WCL-Display-FQ-Linux-6.17"
+  >攻击向量控制</a>
+（Attack Vector Controls）有望随着即将发布的 Linux 6.17 内核被主线合并，目前剩余补丁已被纳入 TIP 分支。</strong></p>
+</blockquote>
+<hr>
+<p>去年，AMD 首次发布了攻击向量控制的原始补丁，旨在<a
+  href="https://www.phoronix.com/news/Attack-Vector-Controls-RFC"
     target="_blank"
-  >部分英特尔图形驱动的变更</a>
- 在 DRM-Next 中排队，而今天又带来了新一批令人期待的 Xe 驱动更新。</p>
+  >重新思考 CPU 安全缓解措施的处理方式</a>
+。通过攻击向量控制，Linux 系统/服务器管理员可以根据系统的实际角色，灵活选择应用哪些 CPU 缓解措施，而无需逐一启用或禁用各项安全缓解。</p>
 <p>
 
 
@@ -644,27 +649,63 @@
     loading="lazy"
     decoding="async"
     fetchpriority="low"
-    alt="image"
+    alt="feature"
     srcset="
-      /posts/202507/11/feature_hu_c4db53331bf3eb54.jpg  330w,
-      /posts/202507/11/feature_hu_3c3788ee086f9a9f.jpg  660w,
-      /posts/202507/11/feature_hu_eeff17d8aeabd78e.jpg 1280w
+      /posts/202507/12/feature_hu_f1da22400181d6e.png  330w,
+      /posts/202507/12/feature_hu_f0980759aea7b917.png  660w,
+      /posts/202507/12/feature_hu_9d1b39aca0af3732.png 1280w
     "
-    data-zoom-src="/posts/202507/11/feature.jpg"
-    src="/posts/202507/11/feature.jpg">
+    data-zoom-src="/posts/202507/12/feature.png"
+    src="/posts/202507/12/feature.png">
 
   
 </figure>
 </p>
-<p>本次为 Linux 6.17 提交的 Intel Xe 内核图形驱动的主要更新包括：</p>
-<ul>
-<li>
-<p><strong>多设备支持的准备</strong><br>
-Xe 驱动核心代码正在为多设备支持做准备，同时也为多 tile 和多 GT 硬件实例做了前瞻性设计。多设备相关工作值得关注，尤其是在 <a
-  href="https://www.phoronix.com/review/intel-arc-pro-b-series"
+<p>攻击向量控制通过将 CPU 安全缓解措施分为“用户到内核”、“用户到用户”、“虚拟机到宿主机”、“虚拟机到虚拟机”以及“跨线程”等类别，<a
+  href="https://www.phoronix.com/news/Linux-CPU-Attack-Vector-Control"
     target="_blank"
-  >英特尔于 Computex 上发布 Project Battlematrix</a>
- 时，宣布计划支持最多八块 Intel Arc Pro GPU，并带来多项 Linux 驱动改进，以提升 Arc Pro 在 AI 及相关工作站负载下的表现。Linux 6.17 仅包含部分多设备准备工作，尚未完全实现。如果英特尔要实现 2025 年的目标，预计还需在 Linux 6.18 完善相关功能。</p>
+  >极大简化了缓解管理</a>
+。</p>
+<blockquote>
+<p>这意味着：</p>
+<ul>
+<li>如果服务器运行虚拟机，</li>
+<li>如果服务器只运行可信虚拟机，或混合运行来自不同不可信用户的虚拟机，</li>
+<li>以及类似场景，</li>
+</ul>
+<p>管理员都能更有效地控制这些安全缓解措施，适配不同的 AMD 和 Intel 处理器。</p>
+</blockquote>
+<p>
+
+
+
+
+
+
+<figure>
+      <img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image1"
+    srcset="
+      /posts/202507/12/image1_hu_f49e1aa3a75a52ba.png  330w,
+      /posts/202507/12/image1_hu_d048d92881c6c16c.png  660w,
+      /posts/202507/12/image1_hu_26208a3b2e130ab2.png 1280w
+    "
+    data-zoom-src="/posts/202507/12/image1.png"
+    src="/posts/202507/12/image1.png">
+
+  
+</figure>
+</p>
+<hr>
+<p>在 Linux 6.15 版本中，<a
+  href="https://www.phoronix.com/news/Linux-6.15-x86-bugs"
+    target="_blank"
+  >部分准备补丁已被合并</a>
+。而在 Linux 6.17 版本，实际的功能支持有望被主线接纳。</p>
 <p>
 
 
@@ -680,55 +721,27 @@ Xe 驱动核心代码正在为多设备支持做准备，同时也为多 tile �
     fetchpriority="low"
     alt="image2"
     srcset="
-      /posts/202507/11/image_hu_12e36ec93ab0cac2.jpg  330w,
-      /posts/202507/11/image_hu_5699c29f7b00503d.jpg  660w,
-      /posts/202507/11/image_hu_c385e7449e530aec.jpg 1280w
+      /posts/202507/12/image2_hu_c4931dbdf2049034.png  330w,
+      /posts/202507/12/image2_hu_49fc2af800c59009.png  660w,
+      /posts/202507/12/image2_hu_8829934400403bd1.png 1280w
     "
-    data-zoom-src="/posts/202507/11/image.jpg"
-    src="/posts/202507/11/image.jpg">
+    data-zoom-src="/posts/202507/12/image2.png"
+    src="/posts/202507/12/image2.png">
 
   
 </figure>
 </p>
-</li>
-<li>
-<p><strong>SR-IOV 虚拟化支持的推进</strong><br>
-除了多设备准备，Project Battlematrix 的另一个目标是提升虚拟化支持，特别是 <a
-  href="https://www.phoronix.com/news/Intel-SR-IOV-PTL-ARL-State"
+<p>今天，攻击向量控制补丁已通过 <a
+  href="https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/log/?h=x86/bugs"
     target="_blank"
-  >英特尔图形 SR-IOV</a>
-。本次 Xe 驱动拉取请求包含了大量 SR-IOV 相关的使能和准备工作，主要面向 Battlemage GPU。虽然这些功能不会在 Linux 6.17 完全落地，但英特尔此前曾表示将在 Q4 完成相关支持，因此有望在 Linux 6.18 实现。</p>
-</li>
-<li>
-<p><strong>新硬件支持</strong><br>
-本次提交还包括对 <a
-  href="https://www.phoronix.com/search/Wildcat&#43;Lake"
+  >tip/tip.git&rsquo;s x86/bugs 分支</a>
+ 合并。既然补丁已进入 TIP 分支，预计会在下一个内核周期提交：即将到来的 Linux 6.17 合并窗口将在 7 月底或 8 月初开启。</p>
+<hr>
+<p>📄 <strong>更多信息请参阅 <a
+  href="https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/commit/?h=x86/bugs&amp;id=1caa1b0509eaec2ea111b875da4eddb44edc9ea5"
     target="_blank"
-  >Wildcat Lake</a>
- 平台的支持，作为相较于 Panther Lake 的精简版硬件。</p>
-</li>
-<li>
-<p><strong>Panther Lake “force_probe” 要求取消</strong><br>
-Xe 驱动的另一个重要里程碑是取消了 Panther Lake 图形的 “force_probe” 要求，这意味着 Panther Lake 不再是实验性目标。从 Linux 6.17 开始，Xe3 Panther Lake 图形将默认启用。这对于即将搭载 Linux 6.17 的 Ubuntu 25.10、Fedora 43 等发行版来说是个好消息。</p>
-</li>
-<li>
-<p><strong>对独立显卡非易失性存储器的访问支持</strong><br>
-新增了访问现代英特尔独立显卡非易失性存储设备的驱动代码。</p>
-</li>
-<li>
-<p><strong>风扇控制与电压信息</strong><br>
-Xe 驱动现在通过 sysfs 暴露了风扇控制和电压信息。</p>
-</li>
-<li>
-<p><strong>无闪烁启动优化</strong><br>
-针对无闪烁启动流程进行了初始化改进。</p>
-</li>
-<li>
-<p><strong>其他改进与增强</strong><br>
-还包括其他多项变更和增强。</p>
-</li>
-</ul>
-<p>简而言之，本次 Intel Xe 驱动的更新是近几个月（甚至几年）以来最重磅的一次。无论是 Panther Lake 默认启用、多设备与 SR-IOV 的准备、Wildcat Lake 支持，还是其他众多改进，Linux 6.17 的 Xe 驱动都将带来极为重要的升级。</p>
+  >当前攻击向量控制文档</a>
+，了解如何在 Linux 系统上管理 CPU 安全缓解措施。</strong></p>
 
           
           
@@ -747,7 +760,7 @@ Xe 驱动现在通过 sysfs 暴露了风扇控制和电压信息。</p>
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://twitter.com/intent/tweet/?url=https://openlinux21.github.io/posts/202507/11/&amp;text=%e8%8b%b1%e7%89%b9%e5%b0%94%e4%b8%ba%20Linux%206.17%20%e5%87%86%e5%a4%87%e9%87%8d%e5%a4%a7%e5%9b%be%e5%bd%a2%e9%a9%b1%e5%8a%a8%e6%9b%b4%e6%96%b0%ef%bc%9a%e5%a4%9a%e8%ae%be%e5%a4%87%e6%94%af%e6%8c%81%e5%87%86%e5%a4%87%e3%80%81SR-IOV%e3%80%81WCL"
+          href="https://twitter.com/intent/tweet/?url=https://openlinux21.github.io/posts/202507/12/&amp;text=%e6%94%bb%e5%87%bb%e5%90%91%e9%87%8f%e6%8e%a7%e5%88%b6%e6%9c%89%e6%9c%9b%e5%9c%a8%20Linux%206.17%20%e5%bc%95%e5%85%a5"
           title="Tweet on Twitter"
           aria-label="Tweet on Twitter">
           
@@ -764,7 +777,7 @@ Xe 驱动现在通过 sysfs 暴露了风扇控制和电压信息。</p>
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://reddit.com/submit/?url=https://openlinux21.github.io/posts/202507/11/&amp;resubmit=true&amp;title=%e8%8b%b1%e7%89%b9%e5%b0%94%e4%b8%ba%20Linux%206.17%20%e5%87%86%e5%a4%87%e9%87%8d%e5%a4%a7%e5%9b%be%e5%bd%a2%e9%a9%b1%e5%8a%a8%e6%9b%b4%e6%96%b0%ef%bc%9a%e5%a4%9a%e8%ae%be%e5%a4%87%e6%94%af%e6%8c%81%e5%87%86%e5%a4%87%e3%80%81SR-IOV%e3%80%81WCL"
+          href="https://reddit.com/submit/?url=https://openlinux21.github.io/posts/202507/12/&amp;resubmit=true&amp;title=%e6%94%bb%e5%87%bb%e5%90%91%e9%87%8f%e6%8e%a7%e5%88%b6%e6%9c%89%e6%9c%9b%e5%9c%a8%20Linux%206.17%20%e5%bc%95%e5%85%a5"
           title="Submit to Reddit"
           aria-label="Submit to Reddit">
           
@@ -782,7 +795,7 @@ Xe 驱动现在通过 sysfs 暴露了风扇控制和电压信息。</p>
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://www.facebook.com/sharer/sharer.php?u=https://openlinux21.github.io/posts/202507/11/&amp;quote=%e8%8b%b1%e7%89%b9%e5%b0%94%e4%b8%ba%20Linux%206.17%20%e5%87%86%e5%a4%87%e9%87%8d%e5%a4%a7%e5%9b%be%e5%bd%a2%e9%a9%b1%e5%8a%a8%e6%9b%b4%e6%96%b0%ef%bc%9a%e5%a4%9a%e8%ae%be%e5%a4%87%e6%94%af%e6%8c%81%e5%87%86%e5%a4%87%e3%80%81SR-IOV%e3%80%81WCL"
+          href="https://www.facebook.com/sharer/sharer.php?u=https://openlinux21.github.io/posts/202507/12/&amp;quote=%e6%94%bb%e5%87%bb%e5%90%91%e9%87%8f%e6%8e%a7%e5%88%b6%e6%9c%89%e6%9c%9b%e5%9c%a8%20Linux%206.17%20%e5%bc%95%e5%85%a5"
           title="Share on Facebook"
           aria-label="Share on Facebook">
           
@@ -800,7 +813,7 @@ Xe 驱动现在通过 sysfs 暴露了风扇控制和电压信息。</p>
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="mailto:?body=https://openlinux21.github.io/posts/202507/11/&amp;subject=%e8%8b%b1%e7%89%b9%e5%b0%94%e4%b8%ba%20Linux%206.17%20%e5%87%86%e5%a4%87%e9%87%8d%e5%a4%a7%e5%9b%be%e5%bd%a2%e9%a9%b1%e5%8a%a8%e6%9b%b4%e6%96%b0%ef%bc%9a%e5%a4%9a%e8%ae%be%e5%a4%87%e6%94%af%e6%8c%81%e5%87%86%e5%a4%87%e3%80%81SR-IOV%e3%80%81WCL"
+          href="mailto:?body=https://openlinux21.github.io/posts/202507/12/&amp;subject=%e6%94%bb%e5%87%bb%e5%90%91%e9%87%8f%e6%8e%a7%e5%88%b6%e6%9c%89%e6%9c%9b%e5%9c%a8%20Linux%206.17%20%e5%bc%95%e5%85%a5"
           title="Send via email"
           aria-label="Send via email">
           
@@ -818,7 +831,7 @@ Xe 驱动现在通过 sysfs 暴露了风扇控制和电压信息。</p>
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://api.whatsapp.com/send?text=https://openlinux21.github.io/posts/202507/11/&amp;resubmit=true&amp;title=%e8%8b%b1%e7%89%b9%e5%b0%94%e4%b8%ba%20Linux%206.17%20%e5%87%86%e5%a4%87%e9%87%8d%e5%a4%a7%e5%9b%be%e5%bd%a2%e9%a9%b1%e5%8a%a8%e6%9b%b4%e6%96%b0%ef%bc%9a%e5%a4%9a%e8%ae%be%e5%a4%87%e6%94%af%e6%8c%81%e5%87%86%e5%a4%87%e3%80%81SR-IOV%e3%80%81WCL"
+          href="https://api.whatsapp.com/send?text=https://openlinux21.github.io/posts/202507/12/&amp;resubmit=true&amp;title=%e6%94%bb%e5%87%bb%e5%90%91%e9%87%8f%e6%8e%a7%e5%88%b6%e6%9c%89%e6%9c%9b%e5%9c%a8%20Linux%206.17%20%e5%bc%95%e5%85%a5"
           title="Share via WhatsApp"
           aria-label="Share via WhatsApp">
           
@@ -836,7 +849,7 @@ Xe 驱动现在通过 sysfs 暴露了风扇控制和电压信息。</p>
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://t.me/share/url?url=https://openlinux21.github.io/posts/202507/11/&amp;resubmit=true&amp;title=%e8%8b%b1%e7%89%b9%e5%b0%94%e4%b8%ba%20Linux%206.17%20%e5%87%86%e5%a4%87%e9%87%8d%e5%a4%a7%e5%9b%be%e5%bd%a2%e9%a9%b1%e5%8a%a8%e6%9b%b4%e6%96%b0%ef%bc%9a%e5%a4%9a%e8%ae%be%e5%a4%87%e6%94%af%e6%8c%81%e5%87%86%e5%a4%87%e3%80%81SR-IOV%e3%80%81WCL"
+          href="https://t.me/share/url?url=https://openlinux21.github.io/posts/202507/12/&amp;resubmit=true&amp;title=%e6%94%bb%e5%87%bb%e5%90%91%e9%87%8f%e6%8e%a7%e5%88%b6%e6%9c%89%e6%9c%9b%e5%9c%a8%20Linux%206.17%20%e5%bc%95%e5%85%a5"
           title="Share via Telegram"
           aria-label="Share via Telegram">
           
@@ -854,7 +867,7 @@ Xe 驱动现在通过 sysfs 暴露了风扇控制和电压信息。</p>
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://line.me/R/share?text=https://openlinux21.github.io/posts/202507/11/%20%e8%8b%b1%e7%89%b9%e5%b0%94%e4%b8%ba%20Linux%206.17%20%e5%87%86%e5%a4%87%e9%87%8d%e5%a4%a7%e5%9b%be%e5%bd%a2%e9%a9%b1%e5%8a%a8%e6%9b%b4%e6%96%b0%ef%bc%9a%e5%a4%9a%e8%ae%be%e5%a4%87%e6%94%af%e6%8c%81%e5%87%86%e5%a4%87%e3%80%81SR-IOV%e3%80%81WCL"
+          href="https://line.me/R/share?text=https://openlinux21.github.io/posts/202507/12/%20%e6%94%bb%e5%87%bb%e5%90%91%e9%87%8f%e6%8e%a7%e5%88%b6%e6%9c%89%e6%9c%9b%e5%9c%a8%20Linux%206.17%20%e5%bc%95%e5%85%a5"
           title="Share on LINE"
           aria-label="Share on LINE">
           
@@ -887,8 +900,8 @@ Xe 驱动现在通过 sysfs 暴露了风扇控制和电压信息。</p>
           type="text/javascript"
           src="/js/page.min.407e5b2727c1f241c95d53db24c776bea71bfc18e09511b815d669ad8caca6e9e18a53864ad364b1ccccfa2f2956768d33cfe193bfb64d3406f3b5ece354ba57.js"
           integrity="sha512-QH5bJyfB8kHJXVPbJMd2vqcb/BjglRG4FdZprYyspunhilOGStNksczM&#43;i8pVnaNM8/hk7&#43;2TTQG87Xs41S6Vw=="
-          data-oid="views_posts/202507/11/index.md"
-          data-oid-likes="likes_posts/202507/11/index.md"></script>
+          data-oid="views_posts/202507/12/index.md"
+          data-oid-likes="likes_posts/202507/12/index.md"></script>
       
 
     </section>
@@ -903,7 +916,7 @@ Xe 驱动现在通过 sysfs 暴露了风扇控制和电压信息。</p>
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/posts/202507/10/">
+            <a class="flex group mr-3" href="/posts/202507/11/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -914,11 +927,11 @@ Xe 驱动现在通过 sysfs 暴露了风扇控制和电压信息。</p>
               >
               <span class="flex flex-col">
                 <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Linux 6.17 看来要放弃 pktcdvd 包写入 CD/DVD 驱动程序了</span
+                  >英特尔为 Linux 6.17 准备重大图形驱动更新：多设备支持准备、SR-IOV、WCL</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2025-07-10T00:00:00&#43;00:00">2025/07/10</time>
+                    <time datetime="2025-07-11T00:00:00&#43;00:00">2025/07/11</time>
                   
                 </span>
               </span>
@@ -926,27 +939,6 @@ Xe 驱动现在通过 sysfs 暴露了风扇控制和电压信息。</p>
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/posts/202507/12/">
-              <span class="flex flex-col">
-                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >攻击向量控制有望在 Linux 6.17 引入</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2025-07-12T00:00:00&#43;00:00">2025/07/12</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
