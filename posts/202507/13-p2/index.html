@@ -12,14 +12,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Wine-Staging 10.12 版本发布，修复了来自 11 年前的漏洞 &middot; 南极企鹅领地</title>
-  <meta name="title" content="Wine-Staging 10.12 版本发布，修复了来自 11 年前的漏洞 &middot; 南极企鹅领地" />
+  <title>Linux 6.16-rc6 发布，带来瞬时调度攻击缓解与 AMD Zen 2 修复 &middot; 南极企鹅领地</title>
+  <meta name="title" content="Linux 6.16-rc6 发布，带来瞬时调度攻击缓解与 AMD Zen 2 修复 &middot; 南极企鹅领地" />
   
   <meta name="description" content="我的小小博客" />
-  <meta name="keywords" content="Linux, NTKernel, Windows, Wine, " />
+  <meta name="keywords" content="Linux, AMD, Intel, " />
   
   
-  <link rel="canonical" href="https://openlinux21.github.io/posts/202507/13/" />
+  <link rel="canonical" href="https://openlinux21.github.io/posts/202507/13-p2/" />
   
   
   
@@ -68,9 +68,9 @@
   
   
   
-  <meta property="og:url" content="https://openlinux21.github.io/posts/202507/13/">
+  <meta property="og:url" content="https://openlinux21.github.io/posts/202507/13-p2/">
   <meta property="og:site_name" content="南极企鹅领地">
-  <meta property="og:title" content="Wine-Staging 10.12 版本发布，修复了来自 11 年前的漏洞">
+  <meta property="og:title" content="Linux 6.16-rc6 发布，带来瞬时调度攻击缓解与 AMD Zen 2 修复">
   <meta property="og:description" content="我的小小博客">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
@@ -78,15 +78,14 @@
     <meta property="article:published_time" content="2025-07-13T00:00:00+00:00">
     <meta property="article:modified_time" content="2025-07-13T00:00:00+00:00">
     <meta property="article:tag" content="Linux">
-    <meta property="article:tag" content="NTKernel">
-    <meta property="article:tag" content="Windows">
-    <meta property="article:tag" content="Wine">
-    <meta property="og:image" content="https://openlinux21.github.io/posts/202507/13/feature.png">
+    <meta property="article:tag" content="AMD">
+    <meta property="article:tag" content="Intel">
+    <meta property="og:image" content="https://openlinux21.github.io/posts/202507/13-p2/feature.jpg">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://openlinux21.github.io/posts/202507/13/feature.png">
-  <meta name="twitter:title" content="Wine-Staging 10.12 版本发布，修复了来自 11 年前的漏洞">
+  <meta name="twitter:image" content="https://openlinux21.github.io/posts/202507/13-p2/feature.jpg">
+  <meta name="twitter:title" content="Linux 6.16-rc6 发布，带来瞬时调度攻击缓解与 AMD Zen 2 修复">
   <meta name="twitter:description" content="我的小小博客">
 
   
@@ -95,12 +94,12 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "Wine-Staging 10.12 版本发布，修复了来自 11 年前的漏洞",
-    "headline": "Wine-Staging 10.12 版本发布，修复了来自 11 年前的漏洞",
+    "name": "Linux 6.16-rc6 发布，带来瞬时调度攻击缓解与 AMD Zen 2 修复",
+    "headline": "Linux 6.16-rc6 发布，带来瞬时调度攻击缓解与 AMD Zen 2 修复",
     
     
     "inLanguage": "en",
-    "url" : "https:\/\/openlinux21.github.io\/posts\/202507\/13\/",
+    "url" : "https:\/\/openlinux21.github.io\/posts\/202507\/13-p2\/",
     "author" : {
       "@type": "Person",
       "name": "MoriTsukiKawa"
@@ -111,10 +110,10 @@
     
     "dateModified": "2025-07-13T00:00:00\u002b00:00",
     
-    "keywords": ["Linux","NTKernel","Windows","Wine"],
+    "keywords": ["Linux","AMD","Intel"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "100"
+    "wordCount": "97"
   }]
   </script>
 
@@ -364,7 +363,7 @@
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/posts/202507/13/feature_hu_e91f7b1cdcad2609.png);">
+    style="background-image:url(/posts/202507/13-p2/feature_hu_331f1919b8bf0a89.jpg);">
     
 
 
@@ -387,7 +386,7 @@
     <header id="single_header" class="mt-5 max-w-prose">
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        Wine-Staging 10.12 版本发布，修复了来自 11 年前的漏洞
+        Linux 6.16-rc6 发布，带来瞬时调度攻击缓解与 AMD Zen 2 修复
       </h1>
       <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -440,7 +439,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-07-13T00:00:00&#43;00:00">2025/07/13</time><span class="px-2 text-primary-500">&middot;</span><span>100 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+      <time datetime="2025-07-13T00:00:00&#43;00:00">2025/07/13</time><span class="px-2 text-primary-500">&middot;</span><span>97 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
     
 
     
@@ -623,20 +622,30 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <blockquote>
-<p><strong>Wine-Staging 实验区域已经有一段时间没有新补丁了。不过，更多补丁持续从 Wine-Staging 迁移到上游/主线 Wine。本周末，Wine-Staging 10.12 发布，在上游 Wine 基础上新增了 292 个补丁，其中包含两个全新的补丁。</strong></p>
-</blockquote>
-<hr>
-<p><a
-  href="https://www.phoronix.com/news/Wine-10.12-Released"
+          <p>随着本月晚些时候 <a
+  href="https://www.phoronix.com/search/Linux&#43;6.16"
     target="_blank"
-  >昨日发布的 Wine 10.12</a>
- 带来了 X11 驱动的实验性 EGL 后端、蓝牙低功耗服务支持等增强功能。今天发布的 Wine-Staging 10.12 则额外包含了这 292 个补丁。</p>
-<p>其中一个新补丁解决了这个问题：<a
-  href="https://bugs.winehq.org/show_bug.cgi?id=52278"
+  >Linux 6.16</a>
+ 内核稳定版的临近，Linux 6.16-rc6 今日作为最新的每周测试候选版本发布。</p>
+<p>在刚刚发布的 Linux 6.16-rc6 内核中，已合入本周公开、影响 AMD Zen 3 / Zen 4 处理器的 <a
+  href="https://www.phoronix.com/news/Transient-Scheduler-Attacks"
     target="_blank"
-  >多个基于 InstallAware 的 MSI 安装程序失败并报错 &lsquo;Runtime error in install: Cannot open AVI&rsquo;（影响 Crysis Wars 试用版和 1.5 补丁、CodeGear RAD Studio 2007/2009）</a>
-。这个 bug 报告自 2021 年就已存在，是由于运行时 AVI 相关错误导致 MSI 安装程序失败。现在在 2025 年中期的 Wine-Staging 10.12 中，通过在 COMCTL32 中添加 AVI msvc 编解码器支持的补丁，有望解决这个问题。</p>
+  >瞬时调度攻击（Transient Scheduler Attacks）缓解补丁</a>
+。TSA 相关内核代码已<a
+  href="https://www.phoronix.com/news/Linux-6.15.6-Linux-6.12.37-LTS"
+    target="_blank"
+  >回移植到稳定版 Linux 内核</a>
+，本周二合入 Git 后也成为 6.16-rc6 标签的一部分。</p>
+<p>在 AMD 方面，Linux 6.16-rc6 还<a
+  href="https://www.phoronix.com/news/Linux-6.16-rc6-x86-urgent"
+    target="_blank"
+  >修复了 Cyan Skillfish 中部分本不应在 Linux 上运行的 AMD Zen 2 核心的问题</a>
+。</p>
+<p>在 Intel 方面，Linux 6.16-rc6 的 MAINTAINERS 文件已更新，以反映<a
+  href="https://www.phoronix.com/news/Shutemov-Intel-Linux-Leaving"
+    target="_blank"
+  >一位知名 Intel Linux 工程师在公司工作 14 年后离职</a>
+，其工作邮箱也从 Intel 邮箱转为个人 Kernel.org 邮箱。</p>
 <p>
 
 
@@ -652,34 +661,40 @@
     fetchpriority="low"
     alt="feature"
     srcset="
-      /posts/202507/13/feature_hu_a5e6356c0e306257.png  330w,
-      /posts/202507/13/feature_hu_61a5ba9953589c69.png  660w,
-      /posts/202507/13/feature_hu_f4211f10c44a3841.png 1280w
+      /posts/202507/13-p2/feature_hu_183cc0909aa86de.jpg  330w,
+      /posts/202507/13-p2/feature_hu_b51c3c5a36d5c528.jpg  660w,
+      /posts/202507/13-p2/feature_hu_3ec74bd21e9d3f9f.jpg 1280w
     "
-    data-zoom-src="/posts/202507/13/feature.png"
-    src="/posts/202507/13/feature.png">
+    data-zoom-src="/posts/202507/13-p2/feature.jpg"
+    src="/posts/202507/13-p2/feature.jpg">
 
   
 </figure>
 </p>
-<p>另一个新补丁修复了这个问题：<a
-  href="https://bugs.winehq.org/show_bug.cgi?id=36686"
+<p>此外，Linux 6.16-rc6 还带来了 <a
+  href="https://www.phoronix.com/news/Bcachefs-Fixes-Linux-6.16-rc6"
     target="_blank"
-  >CodeGear RAD Studio 2009 启动失败（ISAXXMLReader::putFeature 方法需要支持 &rsquo;normalize line breaks&rsquo; 功能）</a>
-。是的，这是为了 RAD Studio 2009，而这个 bug 报告实际上可以追溯到 2014 年。为了解决这个问题，MSXML 现在添加了对 ISAXXMLReader::putFeature normalize-line-breaks 选项的支持。</p>
-<blockquote>
-<p>除了这些新补丁外：</p>
-<ul>
-<li>MSXML3 元素属性补丁得到了更新</li>
-<li>其余近 300 个补丁与之前版本保持一致</li>
-</ul>
-</blockquote>
+  >Bcachefs 的一些修复，包括针对高危回归问题的修复</a>
+。</p>
+<p>本周还有其他各类 bug 和回归修复一并合入。</p>
+<p>如果一切顺利，Linux 6.16 稳定版有望于 7 月 27 日（两周后）发布。<a
+  href="https://www.phoronix.com/review/linux-616-features"
+    target="_blank"
+  >6.16 版本带来了许多令人期待的新特性和变更</a>
+。</p>
 <hr>
-<p>📄 <strong>Wine 10.12 和 Wine-Staging 10.12 可以从 <a
-  href="https://www.winehq.org/"
+<p><em>更新：</em> Linus Torvalds 现已发布 <a
+  href="https://lore.kernel.org/lkml/CAHk-=wgMZkz3O5d3aHvbw3uN9JyF1Lt1xrpTYdEuZmU7aUYJ3w@mail.gmail.com/T/#u"
     target="_blank"
-  >WineHQ.org</a>
- 下载。</strong></p>
+  >6.16-rc6 公告</a>
+：</p>
+<blockquote>
+<p>“本周我有点小惊吓，周四发现了一些奇怪的不稳定现象，基本上花了一天时间排查。最终修复其实很简单，只是回退了一个补丁，但一度让我有‘糟了，出大事了’的感觉，因为问题难以复现，也完全看不出是哪个子系统导致的。</p>
+<p>于是我一度怀疑所有人和他们的仓鼠，因为一开始看起来像是 drm 问题，后来又像 netlink 问题（这两个子系统当时都各自有独立的问题）。</p>
+<p>不过最终我找到了稳定复现的方法，也顺利定位了问题。几天过去后，我对本次发布又恢复了信心。我们已重回正轨，尽管有点小插曲，但整体进展良好。</p>
+<p>本周的 shortlog 如下——没有明显的模式，修复内容分布很广，包括驱动、架构修复、文件系统、网络、工具链、文档等。</p>
+<p>还有几周就要正式发布了，希望接下来比这周更顺利。也请大家继续测试。”</p>
+</blockquote>
 
           
           
@@ -698,7 +713,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://twitter.com/intent/tweet/?url=https://openlinux21.github.io/posts/202507/13/&amp;text=Wine-Staging%2010.12%20%e7%89%88%e6%9c%ac%e5%8f%91%e5%b8%83%ef%bc%8c%e4%bf%ae%e5%a4%8d%e4%ba%86%e6%9d%a5%e8%87%aa%2011%20%e5%b9%b4%e5%89%8d%e7%9a%84%e6%bc%8f%e6%b4%9e"
+          href="https://twitter.com/intent/tweet/?url=https://openlinux21.github.io/posts/202507/13-p2/&amp;text=Linux%206.16-rc6%20%e5%8f%91%e5%b8%83%ef%bc%8c%e5%b8%a6%e6%9d%a5%e7%9e%ac%e6%97%b6%e8%b0%83%e5%ba%a6%e6%94%bb%e5%87%bb%e7%bc%93%e8%a7%a3%e4%b8%8e%20AMD%20Zen%202%20%e4%bf%ae%e5%a4%8d"
           title="Tweet on Twitter"
           aria-label="Tweet on Twitter">
           
@@ -715,7 +730,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://reddit.com/submit/?url=https://openlinux21.github.io/posts/202507/13/&amp;resubmit=true&amp;title=Wine-Staging%2010.12%20%e7%89%88%e6%9c%ac%e5%8f%91%e5%b8%83%ef%bc%8c%e4%bf%ae%e5%a4%8d%e4%ba%86%e6%9d%a5%e8%87%aa%2011%20%e5%b9%b4%e5%89%8d%e7%9a%84%e6%bc%8f%e6%b4%9e"
+          href="https://reddit.com/submit/?url=https://openlinux21.github.io/posts/202507/13-p2/&amp;resubmit=true&amp;title=Linux%206.16-rc6%20%e5%8f%91%e5%b8%83%ef%bc%8c%e5%b8%a6%e6%9d%a5%e7%9e%ac%e6%97%b6%e8%b0%83%e5%ba%a6%e6%94%bb%e5%87%bb%e7%bc%93%e8%a7%a3%e4%b8%8e%20AMD%20Zen%202%20%e4%bf%ae%e5%a4%8d"
           title="Submit to Reddit"
           aria-label="Submit to Reddit">
           
@@ -733,7 +748,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://www.facebook.com/sharer/sharer.php?u=https://openlinux21.github.io/posts/202507/13/&amp;quote=Wine-Staging%2010.12%20%e7%89%88%e6%9c%ac%e5%8f%91%e5%b8%83%ef%bc%8c%e4%bf%ae%e5%a4%8d%e4%ba%86%e6%9d%a5%e8%87%aa%2011%20%e5%b9%b4%e5%89%8d%e7%9a%84%e6%bc%8f%e6%b4%9e"
+          href="https://www.facebook.com/sharer/sharer.php?u=https://openlinux21.github.io/posts/202507/13-p2/&amp;quote=Linux%206.16-rc6%20%e5%8f%91%e5%b8%83%ef%bc%8c%e5%b8%a6%e6%9d%a5%e7%9e%ac%e6%97%b6%e8%b0%83%e5%ba%a6%e6%94%bb%e5%87%bb%e7%bc%93%e8%a7%a3%e4%b8%8e%20AMD%20Zen%202%20%e4%bf%ae%e5%a4%8d"
           title="Share on Facebook"
           aria-label="Share on Facebook">
           
@@ -751,7 +766,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="mailto:?body=https://openlinux21.github.io/posts/202507/13/&amp;subject=Wine-Staging%2010.12%20%e7%89%88%e6%9c%ac%e5%8f%91%e5%b8%83%ef%bc%8c%e4%bf%ae%e5%a4%8d%e4%ba%86%e6%9d%a5%e8%87%aa%2011%20%e5%b9%b4%e5%89%8d%e7%9a%84%e6%bc%8f%e6%b4%9e"
+          href="mailto:?body=https://openlinux21.github.io/posts/202507/13-p2/&amp;subject=Linux%206.16-rc6%20%e5%8f%91%e5%b8%83%ef%bc%8c%e5%b8%a6%e6%9d%a5%e7%9e%ac%e6%97%b6%e8%b0%83%e5%ba%a6%e6%94%bb%e5%87%bb%e7%bc%93%e8%a7%a3%e4%b8%8e%20AMD%20Zen%202%20%e4%bf%ae%e5%a4%8d"
           title="Send via email"
           aria-label="Send via email">
           
@@ -769,7 +784,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://api.whatsapp.com/send?text=https://openlinux21.github.io/posts/202507/13/&amp;resubmit=true&amp;title=Wine-Staging%2010.12%20%e7%89%88%e6%9c%ac%e5%8f%91%e5%b8%83%ef%bc%8c%e4%bf%ae%e5%a4%8d%e4%ba%86%e6%9d%a5%e8%87%aa%2011%20%e5%b9%b4%e5%89%8d%e7%9a%84%e6%bc%8f%e6%b4%9e"
+          href="https://api.whatsapp.com/send?text=https://openlinux21.github.io/posts/202507/13-p2/&amp;resubmit=true&amp;title=Linux%206.16-rc6%20%e5%8f%91%e5%b8%83%ef%bc%8c%e5%b8%a6%e6%9d%a5%e7%9e%ac%e6%97%b6%e8%b0%83%e5%ba%a6%e6%94%bb%e5%87%bb%e7%bc%93%e8%a7%a3%e4%b8%8e%20AMD%20Zen%202%20%e4%bf%ae%e5%a4%8d"
           title="Share via WhatsApp"
           aria-label="Share via WhatsApp">
           
@@ -787,7 +802,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://t.me/share/url?url=https://openlinux21.github.io/posts/202507/13/&amp;resubmit=true&amp;title=Wine-Staging%2010.12%20%e7%89%88%e6%9c%ac%e5%8f%91%e5%b8%83%ef%bc%8c%e4%bf%ae%e5%a4%8d%e4%ba%86%e6%9d%a5%e8%87%aa%2011%20%e5%b9%b4%e5%89%8d%e7%9a%84%e6%bc%8f%e6%b4%9e"
+          href="https://t.me/share/url?url=https://openlinux21.github.io/posts/202507/13-p2/&amp;resubmit=true&amp;title=Linux%206.16-rc6%20%e5%8f%91%e5%b8%83%ef%bc%8c%e5%b8%a6%e6%9d%a5%e7%9e%ac%e6%97%b6%e8%b0%83%e5%ba%a6%e6%94%bb%e5%87%bb%e7%bc%93%e8%a7%a3%e4%b8%8e%20AMD%20Zen%202%20%e4%bf%ae%e5%a4%8d"
           title="Share via Telegram"
           aria-label="Share via Telegram">
           
@@ -805,7 +820,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://line.me/R/share?text=https://openlinux21.github.io/posts/202507/13/%20Wine-Staging%2010.12%20%e7%89%88%e6%9c%ac%e5%8f%91%e5%b8%83%ef%bc%8c%e4%bf%ae%e5%a4%8d%e4%ba%86%e6%9d%a5%e8%87%aa%2011%20%e5%b9%b4%e5%89%8d%e7%9a%84%e6%bc%8f%e6%b4%9e"
+          href="https://line.me/R/share?text=https://openlinux21.github.io/posts/202507/13-p2/%20Linux%206.16-rc6%20%e5%8f%91%e5%b8%83%ef%bc%8c%e5%b8%a6%e6%9d%a5%e7%9e%ac%e6%97%b6%e8%b0%83%e5%ba%a6%e6%94%bb%e5%87%bb%e7%bc%93%e8%a7%a3%e4%b8%8e%20AMD%20Zen%202%20%e4%bf%ae%e5%a4%8d"
           title="Share on LINE"
           aria-label="Share on LINE">
           
@@ -838,8 +853,8 @@
           type="text/javascript"
           src="/js/page.min.407e5b2727c1f241c95d53db24c776bea71bfc18e09511b815d669ad8caca6e9e18a53864ad364b1ccccfa2f2956768d33cfe193bfb64d3406f3b5ece354ba57.js"
           integrity="sha512-QH5bJyfB8kHJXVPbJMd2vqcb/BjglRG4FdZprYyspunhilOGStNksczM&#43;i8pVnaNM8/hk7&#43;2TTQG87Xs41S6Vw=="
-          data-oid="views_posts/202507/13/index.md"
-          data-oid-likes="likes_posts/202507/13/index.md"></script>
+          data-oid="views_posts/202507/13-p2/index.md"
+          data-oid-likes="likes_posts/202507/13-p2/index.md"></script>
       
 
     </section>
@@ -854,7 +869,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/posts/202507/12/">
+            <a class="flex group mr-3" href="/posts/202507/13/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -865,11 +880,11 @@
               >
               <span class="flex flex-col">
                 <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >攻击向量控制有望在 Linux 6.17 引入</span
+                  >Wine-Staging 10.12 版本发布，修复了来自 11 年前的漏洞</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2025-07-12T00:00:00&#43;00:00">2025/07/12</time>
+                    <time datetime="2025-07-13T00:00:00&#43;00:00">2025/07/13</time>
                   
                 </span>
               </span>
@@ -878,14 +893,14 @@
         </span>
         <span>
           
-            <a class="flex text-right group ml-3" href="/posts/202507/13-p2/">
+            <a class="flex text-right group ml-3" href="/posts/202507/14/">
               <span class="flex flex-col">
                 <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Linux 6.16-rc6 发布，带来瞬时调度攻击缓解与 AMD Zen 2 修复</span
+                  >CachyOS 2025年7月版发布：Mesa 支持 Anti-Lag，Plasma 默认切换 Wayland</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2025-07-13T00:00:00&#43;00:00">2025/07/13</time>
+                    <time datetime="2025-07-14T00:00:00&#43;00:00">2025/07/14</time>
                   
                 </span>
               </span>

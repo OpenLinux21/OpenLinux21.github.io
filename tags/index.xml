@@ -9,14 +9,74 @@
     <managingEditor>openlinux21@outlook.com (MoriTsukiKawa)</managingEditor>
     <webMaster>openlinux21@outlook.com (MoriTsukiKawa)</webMaster>
     <copyright>© 2025 MoriTsukiKawa</copyright>
-    <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CachyOS</title>
+      <link>https://openlinux21.github.io/tags/cachyos/</link>
+      <pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/cachyos/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Linux</title>
       <link>https://openlinux21.github.io/tags/linux/</link>
-      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate>
       <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
       <guid>https://openlinux21.github.io/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Mesa</title>
+      <link>https://openlinux21.github.io/tags/mesa/</link>
+      <pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/mesa/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Plasma</title>
+      <link>https://openlinux21.github.io/tags/plasma/</link>
+      <pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/plasma/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Wayland</title>
+      <link>https://openlinux21.github.io/tags/wayland/</link>
+      <pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/wayland/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>AMD</title>
+      <link>https://openlinux21.github.io/tags/amd/</link>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/amd/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Intel</title>
+      <link>https://openlinux21.github.io/tags/intel/</link>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/intel/</guid>
       <description></description>
       
     </item>
@@ -47,16 +107,6 @@
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
       <guid>https://openlinux21.github.io/tags/wine/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>AMD</title>
-      <link>https://openlinux21.github.io/tags/amd/</link>
-      <pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate>
-      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
-      <guid>https://openlinux21.github.io/tags/amd/</guid>
       <description></description>
       
     </item>
@@ -127,16 +177,6 @@
       <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
       <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
       <guid>https://openlinux21.github.io/tags/wayback/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Wayland</title>
-      <link>https://openlinux21.github.io/tags/wayland/</link>
-      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
-      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
-      <guid>https://openlinux21.github.io/tags/wayland/</guid>
       <description></description>
       
     </item>
