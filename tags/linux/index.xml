@@ -9,7 +9,37 @@
     <managingEditor>openlinux21@outlook.com (MoriTsukiKawa)</managingEditor>
     <webMaster>openlinux21@outlook.com (MoriTsukiKawa)</webMaster>
     <copyright>© 2025 MoriTsukiKawa</copyright>
-    <lastBuildDate>Mon, 14 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>KDE Plasma 6.5 Brings Rounded Bottom Corners For Windows By Default</title>
+      <link>https://openlinux21.github.io/posts/202507/19/</link>
+      <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/posts/202507/19/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202507/19/feature.jpg" />
+    </item>
+    
+    <item>
+      <title>Intel Compute Runtime 25.27.34303.5 Brings Support For Wildcat Lake &amp; BMG G31</title>
+      <link>https://openlinux21.github.io/posts/202507/18/</link>
+      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/posts/202507/18/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202507/18/feature.jpg" />
+    </item>
+    
+    <item>
+      <title>Linux Receiving Fix For AMD Radeon Polaris GPUs Producing Lots Of Log Spam</title>
+      <link>https://openlinux21.github.io/posts/202507/17/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/posts/202507/17/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202507/17/feature.jpg" />
+    </item>
     
     <item>
       <title>CachyOS 2025年7月版发布：Mesa 支持 Anti-Lag，Plasma 默认切换 Wayland</title>
