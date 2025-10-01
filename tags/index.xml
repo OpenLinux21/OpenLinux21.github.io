@@ -9,14 +9,14 @@
     <managingEditor>openlinux21@outlook.com (MoriTsukiKawa)</managingEditor>
     <webMaster>openlinux21@outlook.com (MoriTsukiKawa)</webMaster>
     <copyright>© 2025 MoriTsukiKawa</copyright>
-    <lastBuildDate>Sun, 20 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>MTF</title>
-      <link>https://openlinux21.github.io/tags/mtf/</link>
-      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
+      <title>32-Bit</title>
+      <link>https://openlinux21.github.io/tags/32-bit/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
       <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
-      <guid>https://openlinux21.github.io/tags/mtf/</guid>
+      <guid>https://openlinux21.github.io/tags/32-bit/</guid>
       <description></description>
       
     </item>
@@ -24,9 +24,29 @@
     <item>
       <title>Linux</title>
       <link>https://openlinux21.github.io/tags/linux/</link>
-      <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
       <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
       <guid>https://openlinux21.github.io/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>OpenSUSE</title>
+      <link>https://openlinux21.github.io/tags/opensuse/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/opensuse/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>MTF</title>
+      <link>https://openlinux21.github.io/tags/mtf/</link>
+      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/mtf/</guid>
       <description></description>
       
     </item>

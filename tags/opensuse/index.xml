@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenSUSE on 南极企鹅领地</title>
+    <link>https://openlinux21.github.io/tags/opensuse/</link>
+    <description>Recent content in OpenSUSE on 南极企鹅领地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>openlinux21@outlook.com (MoriTsukiKawa)</managingEditor>
+    <webMaster>openlinux21@outlook.com (MoriTsukiKawa)</webMaster>
+    <copyright>© 2025 MoriTsukiKawa</copyright>
+    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/tags/opensuse/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>openSUSE Leap 16 Released - Requires x86-64-v2 CPUs, No x86 32-bit Support By Default</title>
+      <link>https://openlinux21.github.io/posts/202510/10/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/posts/202510/10/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202510/10/feature.png" />
+    </item>
+    
+  </channel>
+</rss>
