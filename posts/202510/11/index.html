@@ -16,10 +16,10 @@
   <meta name="title" content="openSUSE Leap 16 Released - Requires x86-64-v2 CPUs, No x86 32-bit Support By Default &middot; 南极企鹅领地" />
   
   <meta name="description" content="我的小小博客" />
-  <meta name="keywords" content="Linux, OpenSUSE, 32-bit, " />
+  <meta name="keywords" content="Intel, GPU, Software, " />
   
   
-  <link rel="canonical" href="https://openlinux21.github.io/posts/202510/10/" />
+  <link rel="canonical" href="https://openlinux21.github.io/posts/202510/11/" />
   
   
   
@@ -68,7 +68,7 @@
   
   
   
-  <meta property="og:url" content="https://openlinux21.github.io/posts/202510/10/">
+  <meta property="og:url" content="https://openlinux21.github.io/posts/202510/11/">
   <meta property="og:site_name" content="南极企鹅领地">
   <meta property="og:title" content="openSUSE Leap 16 Released - Requires x86-64-v2 CPUs, No x86 32-bit Support By Default">
   <meta property="og:description" content="我的小小博客">
@@ -77,14 +77,14 @@
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-10-01T00:00:00+00:00">
     <meta property="article:modified_time" content="2025-10-01T00:00:00+00:00">
-    <meta property="article:tag" content="Linux">
-    <meta property="article:tag" content="OpenSUSE">
-    <meta property="article:tag" content="32-Bit">
-    <meta property="og:image" content="https://openlinux21.github.io/posts/202510/10/feature.png">
+    <meta property="article:tag" content="Intel">
+    <meta property="article:tag" content="GPU">
+    <meta property="article:tag" content="Software">
+    <meta property="og:image" content="https://openlinux21.github.io/posts/202510/11/feature.png">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://openlinux21.github.io/posts/202510/10/feature.png">
+  <meta name="twitter:image" content="https://openlinux21.github.io/posts/202510/11/feature.png">
   <meta name="twitter:title" content="openSUSE Leap 16 Released - Requires x86-64-v2 CPUs, No x86 32-bit Support By Default">
   <meta name="twitter:description" content="我的小小博客">
 
@@ -99,7 +99,7 @@
     
     
     "inLanguage": "en",
-    "url" : "https:\/\/openlinux21.github.io\/posts\/202510\/10\/",
+    "url" : "https:\/\/openlinux21.github.io\/posts\/202510\/11\/",
     "author" : {
       "@type": "Person",
       "name": "MoriTsukiKawa"
@@ -110,10 +110,10 @@
     
     "dateModified": "2025-10-01T00:00:00\u002b00:00",
     
-    "keywords": ["Linux","OpenSUSE","32-bit"],
+    "keywords": ["Intel","GPU","Software"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "61"
+    "wordCount": "265"
   }]
   </script>
 
@@ -363,7 +363,7 @@
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/posts/202510/10/feature_hu_b2141904071e6bce.png);">
+    style="background-image:url(/posts/202510/11/feature_hu_4ff62dd092f59b83.png);">
     
 
 
@@ -439,7 +439,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-10-01T00:00:00&#43;00:00">2025/10/01</time><span class="px-2 text-primary-500">&middot;</span><span>61 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+      <time datetime="2025-10-01T00:00:00&#43;00:00">2025/10/01</time><span class="px-2 text-primary-500">&middot;</span><span>265 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
     
 
     
@@ -622,25 +622,12 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>OpenSUSE Leap 16.0 今日发布，这个社区 Linux 发行版与 SUSE Linux Enterprise 16 使用相同的源代码构建。</p>
-<p><a
-  href="https://www.phoronix.com/search/openSUSE&#43;Leap&#43;16"
+          <p>Last week during the <a
+  href="https://www.phoronix.com/review/intel-open-source-2025"
     target="_blank"
-  >OpenSUSE Leap 16</a>
- 和 SUSE Linux Enterprise 16 的主要特点包括：</p>
-<ul>
-<li>基于 Linux 6.12 LTS 内核</li>
-<li>默认禁用 IA32 32 位支持</li>
-<li>要求 x86_64-v2 及更新的 CPU，移除基线支持</li>
-<li>采用现代化的 Agama 安装程序</li>
-<li>支持 SELinux 安全模块</li>
-<li>相比 openSUSE Leap 15 系列有大量其他改进</li>
-</ul>
-<p>openSUSE Leap 16 提供 <a
-  href="https://www.phoronix.com/news/openSUSE-Leap-16-24-Months"
-    target="_blank"
-  >24 个月的更新和社区支持</a>
-，并将持续发布年度小版本更新直到 2031 年。</p>
+  >Intel Tech Tour in Arizona</a>
+, the Intel XPU Manager 1.3.3 software was released. Intel XPU Manager is a management and monitoring tool focused on Intel data center GPUs for simplifying administration, reliability, and maximizing utilization. Somewhat surprisingly, the Intel XPU Manager now deprecated the Data Center GPU Max Series as well as the Data Center GPU Flex Series.</p>
+<p>The Intel XPU Manager provides a command-line interface and various APIs to assist in GPU discovery and associated information reporting. It also supports GPU firmware updating, GPU topology / grouping, various telmetry and health capabilities, and configuring various GPU policies and settings. Via API integration with Grafana and other software, it can make for some pretty powerful reporting and management capabilities:</p>
 <p>
 
 
@@ -654,23 +641,30 @@
     loading="lazy"
     decoding="async"
     fetchpriority="low"
-    alt="openSUSE Leap 16"
+    alt="Intel XPU Manager"
     srcset="
-      /posts/202510/10/feature_hu_c3e9ad6f797f86a8.png  330w,
-      /posts/202510/10/feature_hu_1c124b47eee67ae9.png  660w,
-      /posts/202510/10/feature_hu_356a73e579af4441.png 1280w
+      /posts/202510/11/feature_hu_2cc08f9ce1345a73.png  330w,
+      /posts/202510/11/feature_hu_dcdf4de00ef4f82.png  660w,
+      /posts/202510/11/feature_hu_ce709461de7fa4b.png 1280w
     "
-    data-zoom-src="/posts/202510/10/feature.png"
-    src="/posts/202510/10/feature.png">
+    data-zoom-src="/posts/202510/11/feature.png"
+    src="/posts/202510/11/feature.png">
 
   
 </figure>
 </p>
-<p>更多 openSUSE Leap 16 发布详情和下载，请访问 <a
-  href="https://news.opensuse.org/2025/10/01/next-chapter-opens-with-leap-release/"
+<p>With last week&rsquo;s XPU Manager 1.3.3 release, the Intel Data Center GPU Flex Series and Data Center GPU Max Series is now considered deprecated. Those relying on these Intel Data Center GPUs are recommended to move to the older XPU Manager 1.2 release series.</p>
+<p>This now leaves the Intel Arc Pro B60 as the only officially supported graphics processor by the XPU Manager. The <a
+  href="https://www.phoronix.com/review/intel-arc-pro-b50-linux"
     target="_blank"
-  >openSUSE 官网</a>
-。</p>
+  >Intel Arc Pro B50</a>
+ presumably should work as well albeit less powerful GPU for the data center and isn&rsquo;t officially mentioned as part of being supported.</p>
+<p>Besides now listing the Data Center GPU Max and Data Center GPU Flex series as deprecated, the Intel XPU Manager 1.3.3 release adds support for SR-IOV vGPU commands, power limit monitoring support on Windows, PCIe Gen4 downgrade options, and other improvements.</p>
+<p>Intel XPU Manager 1.3.3 can be downloaded from <a
+  href="https://github.com/intel/xpumanager/releases/tag/v1.3.3"
+    target="_blank"
+  >GitHub</a>
+.</p>
 
           
           
@@ -689,7 +683,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://twitter.com/intent/tweet/?url=https://openlinux21.github.io/posts/202510/10/&amp;text=openSUSE%20Leap%2016%20Released%20-%20Requires%20x86-64-v2%20CPUs,%20No%20x86%2032-bit%20Support%20By%20Default"
+          href="https://twitter.com/intent/tweet/?url=https://openlinux21.github.io/posts/202510/11/&amp;text=openSUSE%20Leap%2016%20Released%20-%20Requires%20x86-64-v2%20CPUs,%20No%20x86%2032-bit%20Support%20By%20Default"
           title="Tweet on Twitter"
           aria-label="Tweet on Twitter">
           
@@ -706,7 +700,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://reddit.com/submit/?url=https://openlinux21.github.io/posts/202510/10/&amp;resubmit=true&amp;title=openSUSE%20Leap%2016%20Released%20-%20Requires%20x86-64-v2%20CPUs,%20No%20x86%2032-bit%20Support%20By%20Default"
+          href="https://reddit.com/submit/?url=https://openlinux21.github.io/posts/202510/11/&amp;resubmit=true&amp;title=openSUSE%20Leap%2016%20Released%20-%20Requires%20x86-64-v2%20CPUs,%20No%20x86%2032-bit%20Support%20By%20Default"
           title="Submit to Reddit"
           aria-label="Submit to Reddit">
           
@@ -724,7 +718,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://www.facebook.com/sharer/sharer.php?u=https://openlinux21.github.io/posts/202510/10/&amp;quote=openSUSE%20Leap%2016%20Released%20-%20Requires%20x86-64-v2%20CPUs,%20No%20x86%2032-bit%20Support%20By%20Default"
+          href="https://www.facebook.com/sharer/sharer.php?u=https://openlinux21.github.io/posts/202510/11/&amp;quote=openSUSE%20Leap%2016%20Released%20-%20Requires%20x86-64-v2%20CPUs,%20No%20x86%2032-bit%20Support%20By%20Default"
           title="Share on Facebook"
           aria-label="Share on Facebook">
           
@@ -742,7 +736,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="mailto:?body=https://openlinux21.github.io/posts/202510/10/&amp;subject=openSUSE%20Leap%2016%20Released%20-%20Requires%20x86-64-v2%20CPUs,%20No%20x86%2032-bit%20Support%20By%20Default"
+          href="mailto:?body=https://openlinux21.github.io/posts/202510/11/&amp;subject=openSUSE%20Leap%2016%20Released%20-%20Requires%20x86-64-v2%20CPUs,%20No%20x86%2032-bit%20Support%20By%20Default"
           title="Send via email"
           aria-label="Send via email">
           
@@ -760,7 +754,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://api.whatsapp.com/send?text=https://openlinux21.github.io/posts/202510/10/&amp;resubmit=true&amp;title=openSUSE%20Leap%2016%20Released%20-%20Requires%20x86-64-v2%20CPUs,%20No%20x86%2032-bit%20Support%20By%20Default"
+          href="https://api.whatsapp.com/send?text=https://openlinux21.github.io/posts/202510/11/&amp;resubmit=true&amp;title=openSUSE%20Leap%2016%20Released%20-%20Requires%20x86-64-v2%20CPUs,%20No%20x86%2032-bit%20Support%20By%20Default"
           title="Share via WhatsApp"
           aria-label="Share via WhatsApp">
           
@@ -778,7 +772,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://t.me/share/url?url=https://openlinux21.github.io/posts/202510/10/&amp;resubmit=true&amp;title=openSUSE%20Leap%2016%20Released%20-%20Requires%20x86-64-v2%20CPUs,%20No%20x86%2032-bit%20Support%20By%20Default"
+          href="https://t.me/share/url?url=https://openlinux21.github.io/posts/202510/11/&amp;resubmit=true&amp;title=openSUSE%20Leap%2016%20Released%20-%20Requires%20x86-64-v2%20CPUs,%20No%20x86%2032-bit%20Support%20By%20Default"
           title="Share via Telegram"
           aria-label="Share via Telegram">
           
@@ -796,7 +790,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://line.me/R/share?text=https://openlinux21.github.io/posts/202510/10/%20openSUSE%20Leap%2016%20Released%20-%20Requires%20x86-64-v2%20CPUs,%20No%20x86%2032-bit%20Support%20By%20Default"
+          href="https://line.me/R/share?text=https://openlinux21.github.io/posts/202510/11/%20openSUSE%20Leap%2016%20Released%20-%20Requires%20x86-64-v2%20CPUs,%20No%20x86%2032-bit%20Support%20By%20Default"
           title="Share on LINE"
           aria-label="Share on LINE">
           
@@ -829,8 +823,8 @@
           type="text/javascript"
           src="/js/page.min.407e5b2727c1f241c95d53db24c776bea71bfc18e09511b815d669ad8caca6e9e18a53864ad364b1ccccfa2f2956768d33cfe193bfb64d3406f3b5ece354ba57.js"
           integrity="sha512-QH5bJyfB8kHJXVPbJMd2vqcb/BjglRG4FdZprYyspunhilOGStNksczM&#43;i8pVnaNM8/hk7&#43;2TTQG87Xs41S6Vw=="
-          data-oid="views_posts/202510/10/index.md"
-          data-oid-likes="likes_posts/202510/10/index.md"></script>
+          data-oid="views_posts/202510/11/index.md"
+          data-oid-likes="likes_posts/202510/11/index.md"></script>
       
 
     </section>
@@ -845,7 +839,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/posts/202510/11/">
+            <a class="flex group mr-3" href="/posts/202507/19/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -856,11 +850,11 @@
               >
               <span class="flex flex-col">
                 <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >openSUSE Leap 16 Released - Requires x86-64-v2 CPUs, No x86 32-bit Support By Default</span
+                  >KDE Plasma 6.5 Brings Rounded Bottom Corners For Windows By Default</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2025-10-01T00:00:00&#43;00:00">2025/10/01</time>
+                    <time datetime="2025-07-19T00:00:00&#43;00:00">2025/07/19</time>
                   
                 </span>
               </span>
@@ -869,14 +863,14 @@
         </span>
         <span>
           
-            <a class="flex text-right group ml-3" href="/posts/202510/12/">
+            <a class="flex text-right group ml-3" href="/posts/202510/10/">
               <span class="flex flex-col">
                 <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Linux 6.18 Lands Retpoline Optimization To Help With Intel E Cores</span
+                  >openSUSE Leap 16 Released - Requires x86-64-v2 CPUs, No x86 32-bit Support By Default</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2025-10-12T00:00:00&#43;00:00">2025/10/12</time>
+                    <time datetime="2025-10-01T00:00:00&#43;00:00">2025/10/01</time>
                   
                 </span>
               </span>

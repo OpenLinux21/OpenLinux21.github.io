@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>openSUSE Leap 16 Released - Requires x86-64-v2 CPUs, No x86 32-bit Support By Default</title>
+      <link>https://openlinux21.github.io/posts/202510/11/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/posts/202510/11/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202510/11/feature.png" />
+    </item>
+    
+    <item>
       <title>Intel Compute Runtime 25.27.34303.5 Brings Support For Wildcat Lake &amp; BMG G31</title>
       <link>https://openlinux21.github.io/posts/202507/18/</link>
       <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
