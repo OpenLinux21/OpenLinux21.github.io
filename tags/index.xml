@@ -9,14 +9,24 @@
     <managingEditor>openlinux21@outlook.com (MoriTsukiKawa)</managingEditor>
     <webMaster>openlinux21@outlook.com (MoriTsukiKawa)</webMaster>
     <copyright>© 2025 MoriTsukiKawa</copyright>
-    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>32-Bit</title>
-      <link>https://openlinux21.github.io/tags/32-bit/</link>
-      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <title>6.18</title>
+      <link>https://openlinux21.github.io/tags/6.18/</link>
+      <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
       <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
-      <guid>https://openlinux21.github.io/tags/32-bit/</guid>
+      <guid>https://openlinux21.github.io/tags/6.18/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Intel</title>
+      <link>https://openlinux21.github.io/tags/intel/</link>
+      <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/intel/</guid>
       <description></description>
       
     </item>
@@ -24,9 +34,19 @@
     <item>
       <title>Linux</title>
       <link>https://openlinux21.github.io/tags/linux/</link>
-      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
       <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
       <guid>https://openlinux21.github.io/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>32-Bit</title>
+      <link>https://openlinux21.github.io/tags/32-bit/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/tags/32-bit/</guid>
       <description></description>
       
     </item>
@@ -67,16 +87,6 @@
       <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
       <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
       <guid>https://openlinux21.github.io/tags/update/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Intel</title>
-      <link>https://openlinux21.github.io/tags/intel/</link>
-      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
-      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
-      <guid>https://openlinux21.github.io/tags/intel/</guid>
       <description></description>
       
     </item>
