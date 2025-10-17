@@ -9,7 +9,17 @@
     <managingEditor>openlinux21@outlook.com (MoriTsukiKawa)</managingEditor>
     <webMaster>openlinux21@outlook.com (MoriTsukiKawa)</webMaster>
     <copyright>© 2025 MoriTsukiKawa</copyright>
-    <lastBuildDate>Sun, 12 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://openlinux21.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fedora 43 Is Not Ready For Release Next Week</title>
+      <link>https://openlinux21.github.io/posts/202510/17/</link>
+      <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
+      <author>openlinux21@outlook.com (MoriTsukiKawa)</author>
+      <guid>https://openlinux21.github.io/posts/202510/17/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://openlinux21.github.io/posts/202510/17/feature.png" />
+    </item>
     
     <item>
       <title>Linux 6.18 Lands Retpoline Optimization To Help With Intel E Cores</title>
