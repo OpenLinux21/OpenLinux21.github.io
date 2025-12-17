@@ -30,8 +30,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.75efbde0b99ff286fae6f03226990076e6f98602b18d149b71f05e113f0fc7184122892266ac783102fe78fdbd53798b33201d9f3b7e00286104f2b671d240e7.css"
-    integrity="sha512-de&#43;94Lmf8ob65vAyJpkAdub5hgKxjRSbcfBeET8PxxhBIokiZqx4MQL&#43;eP29U3mLMyAdnzt&#43;AChhBPK2cdJA5w==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.2755fda1868f0bfc1843df512e7b0b0bec55a259db5f8b13dc3c0f7894e519f617c2b66f5915ec207e2a1ffc8b6d1b53dbd8f3dff8892140cb5eacc50a6edfbb.css"
+    integrity="sha512-J1X9oYaPC/wYQ99RLnsLC&#43;xVolnbX4sT3DwPeJTlGfYXwrZvWRXsIH4qH/yLbRtT29jz3/iJIUDLXqzFCm7fuw==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -47,8 +47,8 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.bbc8dde0b636dfba88adfae8e405171481feff60d739793c7fc554106ba10668f5b613319c1cc3cc1540ddd9c9729b4f5548e53a373eb28910851d353f35a39c.js"
-    integrity="sha512-u8jd4LY237qIrfro5AUXFIH&#43;/2DXOXk8f8VUEGuhBmj1thMxnBzDzBVA3dnJcptPVUjlOjc&#43;sokQhR01PzWjnA==" data-copy="Copy" data-copied="Copied"></script>
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.54688f522dbd435cd17577667367d50a06517a06f4b40b8c2f04d9e61afcb5f1b807ce42dfbe1f0d7979b2430f4e253cf548907cf81ab2f7efb0d66e57933d16.js"
+    integrity="sha512-VGiPUi29Q1zRdXdmc2fVCgZRegb0tAuMLwTZ5hr8tfG4B85C374fDXl5skMPTiU89UiQfPgasvfvsNZuV5M9Fg==" data-copy="Copy" data-copied="Copied"></script>
   
   
   
@@ -629,8 +629,7 @@
   >linux-block.git&rsquo;s for-next 分支</a>
  的补丁中评论道：</p>
 <blockquote>
-<p>“这个驱动早已失去其存在的意义，而且已经损坏且无人维护。它的主要用途是对需要 32KB 包的 cd-rw 驱动器进行 UDF 直接挂载。驱动会将写入操作收集到该大小，并以该大小的倍数写出。但这已不是常见的使用场景，时代已经远离了这类介质。更糟糕的是，它还会在根本不需要或无用的情况下破坏现有系统。”</p>
-</blockquote>
+<p>“这个驱动早已失去其存在的意义，而且已经损坏且无人维护。它的主要用途是对需要 32KB 包的 cd-rw 驱动器进行 UDF 直接挂载。驱动会将写入操作收集到该大小，并以该大小的倍数写出。但这已不是常见的使用场景，时代已经远离了这类介质。更糟糕的是，它还会在根本不需要或无用的情况下破坏现有系统。”</p></blockquote>
 <p>2022 年，这个驱动曾因长期弃用且无人维护而被移除，但在 2023 年初又因仍有用户需求而被恢复。到了 2025 年，依然没有人愿意接手维护，因此现在预计将被永久移除。
 
 
@@ -663,8 +662,7 @@
   >Debian 的一个 bug 报告</a>
 ：插入 DVD-RAM 光盘后，blkid 会无限挂起。该内核驱动已损坏，虽然 Kconfig 文本曾提到可以开发更好的用户空间解决方案来替代包写入驱动，但至今无人贡献。Jens Axboe 在该 bug 报告中评论：</p>
 <blockquote>
-<p>“据我所知，这方面没有任何进展。而且当前驱动已经完全损坏，甚至都没人抱怨（除非在其他场景下偶然遇到），我认为没有理由再让这个驱动留在内核中了。”</p>
-</blockquote>
+<p>“据我所知，这方面没有任何进展。而且当前驱动已经完全损坏，甚至都没人抱怨（除非在其他场景下偶然遇到），我认为没有理由再让这个驱动留在内核中了。”</p></blockquote>
 <p>除非 Linus Torvalds 或其他人最后一刻提出异议，移除 pktcdvd 的补丁已进入块子系统的 “for-next” 分支，预计将在即将到来的 Linux 6.17 合并窗口中合入，让这个老旧且无人维护的驱动彻底退出历史舞台。</p>
 
           

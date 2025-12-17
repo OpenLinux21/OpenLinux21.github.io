@@ -30,8 +30,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.75efbde0b99ff286fae6f03226990076e6f98602b18d149b71f05e113f0fc7184122892266ac783102fe78fdbd53798b33201d9f3b7e00286104f2b671d240e7.css"
-    integrity="sha512-de&#43;94Lmf8ob65vAyJpkAdub5hgKxjRSbcfBeET8PxxhBIokiZqx4MQL&#43;eP29U3mLMyAdnzt&#43;AChhBPK2cdJA5w==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.2755fda1868f0bfc1843df512e7b0b0bec55a259db5f8b13dc3c0f7894e519f617c2b66f5915ec207e2a1ffc8b6d1b53dbd8f3dff8892140cb5eacc50a6edfbb.css"
+    integrity="sha512-J1X9oYaPC/wYQ99RLnsLC&#43;xVolnbX4sT3DwPeJTlGfYXwrZvWRXsIH4qH/yLbRtT29jz3/iJIUDLXqzFCm7fuw==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -47,8 +47,8 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.bbc8dde0b636dfba88adfae8e405171481feff60d739793c7fc554106ba10668f5b613319c1cc3cc1540ddd9c9729b4f5548e53a373eb28910851d353f35a39c.js"
-    integrity="sha512-u8jd4LY237qIrfro5AUXFIH&#43;/2DXOXk8f8VUEGuhBmj1thMxnBzDzBVA3dnJcptPVUjlOjc&#43;sokQhR01PzWjnA==" data-copy="Copy" data-copied="Copied"></script>
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.54688f522dbd435cd17577667367d50a06517a06f4b40b8c2f04d9e61afcb5f1b807ce42dfbe1f0d7979b2430f4e253cf548907cf81ab2f7efb0d66e57933d16.js"
+    integrity="sha512-VGiPUi29Q1zRdXdmc2fVCgZRegb0tAuMLwTZ5hr8tfG4B85C374fDXl5skMPTiU89UiQfPgasvfvsNZuV5M9Fg==" data-copy="Copy" data-copied="Copied"></script>
   
   
   
@@ -636,8 +636,7 @@
 <p>Currently the very common retpoline: &ldquo;CS CALL __x86_indirect_thunk_r11&rdquo; is transformed into &ldquo;CALL *R11; NOP3&rdquo; for eIBRS/BHI_NO parts.</p>
 <p>Similarly, paranoid fineibt has: &ldquo;CALL *R11; NOP&rdquo;.</p>
 <p>Recognise that CS stuffing can avoid the extra NOP. However, due to prefix decode penalties, make sure to not emit too many CS prefixes. Notably: &ldquo;CS CALL __x86_indirect_thunk_rax&rdquo; must not become &ldquo;CS CS CS CS CALL *RAX&rdquo;. Prefix decode penalties are typically many more cycles than decoding an extra NOP.</p>
-<p>Additionally, if the retpoline is a tail-call, the &ldquo;JMP *%\reg&rdquo; should be followed by INT3 for straight-line-speculation mitigation, since emit_indirect() now has a length argument, move this into emit_indirect() such that other users (paranoid-fineibt) also do this.</p>
-</blockquote>
+<p>Additionally, if the retpoline is a tail-call, the &ldquo;JMP *%\reg&rdquo; should be followed by INT3 for straight-line-speculation mitigation, since emit_indirect() now has a length argument, move this into emit_indirect() such that other users (paranoid-fineibt) also do this.</p></blockquote>
 <p>The original <a
   href="https://lore.kernel.org/all/20250902104627.GM4068168@noisy.programming.kicks-ass.net/T/#u"
     target="_blank"
@@ -646,8 +645,7 @@
 <blockquote>
 <p>&ldquo;Finding the exact prefix decode penalties for uarchs that have eIBRS/BHI_NO is not a fun time. I&rsquo;ve stuck to the general wisdom that 3 prefixes is mostly good (notably, the instruction at hand has no 0x0f escape which is sometimes counted towards the prefix budget &ndash; it can have a REX prefix, but those are generally not counted towards the prefix budget).</p>
 <p>In general Intel P-cores do not have prefix decode penalties, but the E-cores (or rather the Atom line) generally does. And since this all runs on hybrid cores, the code must accommodate them.</p>
-<p>I hate all this.&rdquo;</p>
-</blockquote>
+<p>I hate all this.&rdquo;</p></blockquote>
 <p>That patch was merged to Linux Git today via the <a
   href="https://lore.kernel.org/lkml/20251011134629.GAaOpftWmLdD6L7bJn@fat_crate.local/"
     target="_blank"
