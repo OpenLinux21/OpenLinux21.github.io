@@ -130,8 +130,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.cd337644bbf5b13efec6c0720163b4824ad291e4f608f8e9be5fcbd82c212f1ecccaf0b8f7025ecb66a8e5736eb5aeb874184355f60889b8899b443f11cdbe83.css"
-    integrity="sha512-zTN2RLv1sT7&#43;xsByAWO0gkrSkeT2CPjpvl/L2CwhLx7MyvC49wJey2ao5XNuta64dBhDVfYIibiJm0Q/Ec2&#43;gw==">
+    href="/css/main.bundle.min.0975a8c7c266a0697f94839b45e1574c449de253527d44ed516d5c5c3c820c9389d7d86576faae12267b129f8749ecbf7581cddb636aba7690aa633b95aaa87d.css"
+    integrity="sha512-CXWox8JmoGl/lIObReFXTESd4lNSfUTtUW1cXDyCDJOJ19hldvquEiZ7Ep&#43;HSey/dYHN22NqunaQqmM7laqofQ==">
 
   
   
@@ -750,7 +750,8 @@
 
         <div class="article-content max-w-prose mb-20">
           <blockquote>
-<p><strong>今天的天空仿佛被谁温柔描绘，云朵一团团缀在湛蓝画布上，轻盈却分明有着形状，宛如熟悉的梦境。</strong></p></blockquote>
+<p><strong>今天的天空仿佛被谁温柔描绘，云朵一团团缀在湛蓝画布上，轻盈却分明有着形状，宛如熟悉的梦境。</strong></p>
+</blockquote>
 <p>它们不是漫无边际地飘浮，而是<strong>带着故事</strong>——<br>
 像是某部动漫里的天空被借来了，落入现实。</p>
 <p>在那一刻，<br>
@@ -786,7 +787,8 @@
 <hr>
 <blockquote>
 <p>多想这片天永远停留在这一天，<br>
-停留在我抬头凝望的时刻。</p></blockquote>
+停留在我抬头凝望的时刻。</p>
+</blockquote>
 
           
           
@@ -1039,6 +1041,10 @@
       const ownerStart = new Date(Date.UTC(2008, 9, 24, 13, 39, 5));
       const ownerMs = now - ownerStart;
       document.getElementById('owner-age').textContent = formatDuration(ownerMs, '站主已经在这个世界玩了:');
+      
+    const gfStart = new Date(Date.UTC(2007, 0, 28, 6, 38, 21));
+    const gfMs = now - gfStart;
+    document.getElementById('gf-age').textContent = formatDuration(gfMs, '特别的人已经在这个世界上存在了：');
       
       const yearEnd = new Date(Date.UTC(now.getFullYear(), 11, 31, 16, 0, 0)); 
       const yearEndMs = yearEnd - now;

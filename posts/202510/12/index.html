@@ -131,8 +131,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.cd337644bbf5b13efec6c0720163b4824ad291e4f608f8e9be5fcbd82c212f1ecccaf0b8f7025ecb66a8e5736eb5aeb874184355f60889b8899b443f11cdbe83.css"
-    integrity="sha512-zTN2RLv1sT7&#43;xsByAWO0gkrSkeT2CPjpvl/L2CwhLx7MyvC49wJey2ao5XNuta64dBhDVfYIibiJm0Q/Ec2&#43;gw==">
+    href="/css/main.bundle.min.0975a8c7c266a0697f94839b45e1574c449de253527d44ed516d5c5c3c820c9389d7d86576faae12267b129f8749ecbf7581cddb636aba7690aa633b95aaa87d.css"
+    integrity="sha512-CXWox8JmoGl/lIObReFXTESd4lNSfUTtUW1cXDyCDJOJ19hldvquEiZ7Ep&#43;HSey/dYHN22NqunaQqmM7laqofQ==">
 
   
   
@@ -762,7 +762,8 @@
 <p>Currently the very common retpoline: &ldquo;CS CALL __x86_indirect_thunk_r11&rdquo; is transformed into &ldquo;CALL *R11; NOP3&rdquo; for eIBRS/BHI_NO parts.</p>
 <p>Similarly, paranoid fineibt has: &ldquo;CALL *R11; NOP&rdquo;.</p>
 <p>Recognise that CS stuffing can avoid the extra NOP. However, due to prefix decode penalties, make sure to not emit too many CS prefixes. Notably: &ldquo;CS CALL __x86_indirect_thunk_rax&rdquo; must not become &ldquo;CS CS CS CS CALL *RAX&rdquo;. Prefix decode penalties are typically many more cycles than decoding an extra NOP.</p>
-<p>Additionally, if the retpoline is a tail-call, the &ldquo;JMP *%\reg&rdquo; should be followed by INT3 for straight-line-speculation mitigation, since emit_indirect() now has a length argument, move this into emit_indirect() such that other users (paranoid-fineibt) also do this.</p></blockquote>
+<p>Additionally, if the retpoline is a tail-call, the &ldquo;JMP *%\reg&rdquo; should be followed by INT3 for straight-line-speculation mitigation, since emit_indirect() now has a length argument, move this into emit_indirect() such that other users (paranoid-fineibt) also do this.</p>
+</blockquote>
 <p>The original <a
   href="https://lore.kernel.org/all/20250902104627.GM4068168@noisy.programming.kicks-ass.net/T/#u"
     target="_blank"
@@ -770,7 +771,8 @@
 <blockquote>
 <p>&ldquo;Finding the exact prefix decode penalties for uarchs that have eIBRS/BHI_NO is not a fun time. I&rsquo;ve stuck to the general wisdom that 3 prefixes is mostly good (notably, the instruction at hand has no 0x0f escape which is sometimes counted towards the prefix budget &ndash; it can have a REX prefix, but those are generally not counted towards the prefix budget).</p>
 <p>In general Intel P-cores do not have prefix decode penalties, but the E-cores (or rather the Atom line) generally does. And since this all runs on hybrid cores, the code must accommodate them.</p>
-<p>I hate all this.&rdquo;</p></blockquote>
+<p>I hate all this.&rdquo;</p>
+</blockquote>
 <p>That patch was merged to Linux Git today via the <a
   href="https://lore.kernel.org/lkml/20251011134629.GAaOpftWmLdD6L7bJn@fat_crate.local/"
     target="_blank"
@@ -1027,6 +1029,10 @@
       const ownerStart = new Date(Date.UTC(2008, 9, 24, 13, 39, 5));
       const ownerMs = now - ownerStart;
       document.getElementById('owner-age').textContent = formatDuration(ownerMs, '站主已经在这个世界玩了:');
+      
+    const gfStart = new Date(Date.UTC(2007, 0, 28, 6, 38, 21));
+    const gfMs = now - gfStart;
+    document.getElementById('gf-age').textContent = formatDuration(gfMs, '特别的人已经在这个世界上存在了：');
       
       const yearEnd = new Date(Date.UTC(now.getFullYear(), 11, 31, 16, 0, 0)); 
       const yearEndMs = yearEnd - now;

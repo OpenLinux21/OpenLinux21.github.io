@@ -131,8 +131,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.cd337644bbf5b13efec6c0720163b4824ad291e4f608f8e9be5fcbd82c212f1ecccaf0b8f7025ecb66a8e5736eb5aeb874184355f60889b8899b443f11cdbe83.css"
-    integrity="sha512-zTN2RLv1sT7&#43;xsByAWO0gkrSkeT2CPjpvl/L2CwhLx7MyvC49wJey2ao5XNuta64dBhDVfYIibiJm0Q/Ec2&#43;gw==">
+    href="/css/main.bundle.min.0975a8c7c266a0697f94839b45e1574c449de253527d44ed516d5c5c3c820c9389d7d86576faae12267b129f8749ecbf7581cddb636aba7690aa633b95aaa87d.css"
+    integrity="sha512-CXWox8JmoGl/lIObReFXTESd4lNSfUTtUW1cXDyCDJOJ19hldvquEiZ7Ep&#43;HSey/dYHN22NqunaQqmM7laqofQ==">
 
   
   
@@ -801,7 +801,8 @@
 <p>于是我一度怀疑所有人和他们的仓鼠，因为一开始看起来像是 drm 问题，后来又像 netlink 问题（这两个子系统当时都各自有独立的问题）。</p>
 <p>不过最终我找到了稳定复现的方法，也顺利定位了问题。几天过去后，我对本次发布又恢复了信心。我们已重回正轨，尽管有点小插曲，但整体进展良好。</p>
 <p>本周的 shortlog 如下——没有明显的模式，修复内容分布很广，包括驱动、架构修复、文件系统、网络、工具链、文档等。</p>
-<p>还有几周就要正式发布了，希望接下来比这周更顺利。也请大家继续测试。”</p></blockquote>
+<p>还有几周就要正式发布了，希望接下来比这周更顺利。也请大家继续测试。”</p>
+</blockquote>
 
           
           
@@ -1054,6 +1055,10 @@
       const ownerStart = new Date(Date.UTC(2008, 9, 24, 13, 39, 5));
       const ownerMs = now - ownerStart;
       document.getElementById('owner-age').textContent = formatDuration(ownerMs, '站主已经在这个世界玩了:');
+      
+    const gfStart = new Date(Date.UTC(2007, 0, 28, 6, 38, 21));
+    const gfMs = now - gfStart;
+    document.getElementById('gf-age').textContent = formatDuration(gfMs, '特别的人已经在这个世界上存在了：');
       
       const yearEnd = new Date(Date.UTC(now.getFullYear(), 11, 31, 16, 0, 0)); 
       const yearEndMs = yearEnd - now;

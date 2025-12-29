@@ -130,8 +130,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.cd337644bbf5b13efec6c0720163b4824ad291e4f608f8e9be5fcbd82c212f1ecccaf0b8f7025ecb66a8e5736eb5aeb874184355f60889b8899b443f11cdbe83.css"
-    integrity="sha512-zTN2RLv1sT7&#43;xsByAWO0gkrSkeT2CPjpvl/L2CwhLx7MyvC49wJey2ao5XNuta64dBhDVfYIibiJm0Q/Ec2&#43;gw==">
+    href="/css/main.bundle.min.0975a8c7c266a0697f94839b45e1574c449de253527d44ed516d5c5c3c820c9389d7d86576faae12267b129f8749ecbf7581cddb636aba7690aa633b95aaa87d.css"
+    integrity="sha512-CXWox8JmoGl/lIObReFXTESd4lNSfUTtUW1cXDyCDJOJ19hldvquEiZ7Ep&#43;HSey/dYHN22NqunaQqmM7laqofQ==">
 
   
   
@@ -756,7 +756,8 @@
     target="_blank"
   >linux-block.git&rsquo;s for-next 分支</a> 的补丁中评论道：</p>
 <blockquote>
-<p>“这个驱动早已失去其存在的意义，而且已经损坏且无人维护。它的主要用途是对需要 32KB 包的 cd-rw 驱动器进行 UDF 直接挂载。驱动会将写入操作收集到该大小，并以该大小的倍数写出。但这已不是常见的使用场景，时代已经远离了这类介质。更糟糕的是，它还会在根本不需要或无用的情况下破坏现有系统。”</p></blockquote>
+<p>“这个驱动早已失去其存在的意义，而且已经损坏且无人维护。它的主要用途是对需要 32KB 包的 cd-rw 驱动器进行 UDF 直接挂载。驱动会将写入操作收集到该大小，并以该大小的倍数写出。但这已不是常见的使用场景，时代已经远离了这类介质。更糟糕的是，它还会在根本不需要或无用的情况下破坏现有系统。”</p>
+</blockquote>
 <p>2022 年，这个驱动曾因长期弃用且无人维护而被移除，但在 2023 年初又因仍有用户需求而被恢复。到了 2025 年，依然没有人愿意接手维护，因此现在预计将被永久移除。
 <figure><img
     class="my-0 rounded-md"
@@ -776,7 +777,8 @@
     target="_blank"
   >Debian 的一个 bug 报告</a>：插入 DVD-RAM 光盘后，blkid 会无限挂起。该内核驱动已损坏，虽然 Kconfig 文本曾提到可以开发更好的用户空间解决方案来替代包写入驱动，但至今无人贡献。Jens Axboe 在该 bug 报告中评论：</p>
 <blockquote>
-<p>“据我所知，这方面没有任何进展。而且当前驱动已经完全损坏，甚至都没人抱怨（除非在其他场景下偶然遇到），我认为没有理由再让这个驱动留在内核中了。”</p></blockquote>
+<p>“据我所知，这方面没有任何进展。而且当前驱动已经完全损坏，甚至都没人抱怨（除非在其他场景下偶然遇到），我认为没有理由再让这个驱动留在内核中了。”</p>
+</blockquote>
 <p>除非 Linus Torvalds 或其他人最后一刻提出异议，移除 pktcdvd 的补丁已进入块子系统的 “for-next” 分支，预计将在即将到来的 Linux 6.17 合并窗口中合入，让这个老旧且无人维护的驱动彻底退出历史舞台。</p>
 
           
@@ -1030,6 +1032,10 @@
       const ownerStart = new Date(Date.UTC(2008, 9, 24, 13, 39, 5));
       const ownerMs = now - ownerStart;
       document.getElementById('owner-age').textContent = formatDuration(ownerMs, '站主已经在这个世界玩了:');
+      
+    const gfStart = new Date(Date.UTC(2007, 0, 28, 6, 38, 21));
+    const gfMs = now - gfStart;
+    document.getElementById('gf-age').textContent = formatDuration(gfMs, '特别的人已经在这个世界上存在了：');
       
       const yearEnd = new Date(Date.UTC(now.getFullYear(), 11, 31, 16, 0, 0)); 
       const yearEndMs = yearEnd - now;
