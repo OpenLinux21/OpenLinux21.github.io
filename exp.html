@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Index</title>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #07060d;
+      --surface: #0e0c1a;
+      --border: #1e1b30;
+      --accent: #8b6fff;
+      --accent2: #ff6fb0;
+      --text: #c8c2e0;
+      --muted: #4a445e;
+      --bright: #f0ecff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Space Mono', monospace;
+      font-size: 13px;
+      line-height: 1.8;
+      overflow-x: hidden;
+      cursor: none;
+    }
+
+    /* custom cursor */
+    .cursor {
+      position: fixed;
+      width: 8px; height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transition: transform 0.15s ease, background 0.3s;
+      transform: translate(-50%, -50%);
+    }
+    .cursor-ring {
+      position: fixed;
+      width: 30px; height: 30px;
+      border: 1px solid var(--accent);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
+      transition: transform 0.35s ease, width 0.3s, height 0.3s, opacity 0.3s;
+      transform: translate(-50%, -50%);
+      opacity: 0.5;
+    }
+
+    /* noise overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1000;
+      opacity: 0.4;
+    }
+
+    /* aurora background */
+    .aurora {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .aurora::before, .aurora::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.07;
+      animation: drift 20s ease-in-out infinite alternate;
+    }
+    .aurora::before {
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, #8b6fff, transparent);
+      top: -200px; left: -100px;
+    }
+    .aurora::after {
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, #ff6fb0, transparent);
+      bottom: -150px; right: -50px;
+      animation-delay: -10s;
+      animation-duration: 25s;
+    }
+    @keyframes drift {
+      0% { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(80px, 60px) scale(1.15); }
+    }
+
+    /* layout */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 32px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* nav */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.4s, background 0.4s;
+    }
+    nav.scrolled {
+      background: rgba(7,6,13,0.85);
+      backdrop-filter: blur(12px);
+      border-color: var(--border);
+    }
+    .nav-logo {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 18px;
+      color: var(--bright);
+      letter-spacing: 0.1em;
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+
+    /* hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 120px 0 80px;
+      position: relative;
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.3s forwards;
+    }
+    .hero-name {
+      font-family: 'Shippori Mincho', serif;
+      font-size: clamp(52px, 8vw, 100px);
+      font-weight: 700;
+      color: var(--bright);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.5s forwards;
+    }
+    .hero-name .line2 {
+      color: transparent;
+      -webkit-text-stroke: 1px var(--muted);
+      display: block;
+    }
+    .hero-desc {
+      max-width: 480px;
+      color: var(--muted);
+      margin-top: 32px;
+      margin-bottom: 48px;
+      line-height: 2;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.7s forwards;
+    }
+    .hero-desc em {
+      font-style: normal;
+      color: var(--text);
+    }
+    .hero-cta {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.9s forwards;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      color: var(--text);
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--accent);
+      transform: translateY(100%);
+      transition: transform 0.3s;
+    }
+    .btn:hover { color: #fff; border-color: var(--accent); }
+    .btn:hover::before { transform: translateY(0); }
+    .btn span { position: relative; z-index: 1; }
+    .btn-ghost { background: transparent; }
+    .btn-filled {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .btn-filled::before { background: var(--accent2); }
+
+    /* scroll indicator */
+    .scroll-line {
+      position: absolute;
+      bottom: 48px;
+      left: 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0;
+      animation: fadeUp 0.8s 1.2s forwards;
+    }
+    .scroll-line::after {
+      content: '';
+      width: 60px;
+      height: 1px;
+      background: var(--muted);
+    }
+
+    /* section common */
+    section {
+      padding: 100px 0;
+      position: relative;
+    }
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 0.35em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 48px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .section-label::before {
+      content: '';
+      width: 24px;
+      height: 1px;
+      background: var(--accent);
+    }
+    .section-title {
+      font-family: 'Shippori Mincho', serif;
+      font-size: clamp(28px, 4vw, 44px);
+      color: var(--bright);
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    /* about */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .about-text p { color: var(--muted); margin-bottom: 20px; line-height: 2; }
+    .about-text p em { font-style: normal; color: var(--text); }
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-top: 8px;
+    }
+    .stat {
+      background: var(--bg);
+      padding: 24px;
+      transition: background 0.3s;
+    }
+    .stat:hover { background: var(--surface); }
+    .stat-num {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 36px;
+      color: var(--bright);
+      display: block;
+    }
+    .stat-label { font-size: 10px; letter-spacing: 0.2em; color: var(--muted); text-transform: uppercase; }
+
+    /* skills */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 32px;
+    }
+    .skill-tag {
+      padding: 6px 14px;
+      border: 1px solid var(--border);
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      transition: all 0.3s;
+    }
+    .skill-tag:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(139,111,255,0.05);
+    }
+
+    /* projects */
+    .projects-grid {
+      display: grid;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+    .project-card {
+      background: var(--bg);
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: start;
+      transition: background 0.3s;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+    }
+    .project-card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 2px;
+      background: var(--accent);
+      transform: scaleY(0);
+      transition: transform 0.4s;
+      transform-origin: bottom;
+    }
+    .project-card:hover { background: var(--surface); }
+    .project-card:hover::before { transform: scaleY(1); }
+    .project-num {
+      font-size: 11px;
+      color: var(--accent);
+      letter-spacing: 0.2em;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .project-title {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 22px;
+      color: var(--bright);
+      margin-bottom: 10px;
+      display: block;
+    }
+    .project-desc { color: var(--muted); font-size: 12px; line-height: 1.9; }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .project-tag {
+      font-size: 10px;
+      color: var(--accent2);
+      letter-spacing: 0.1em;
+    }
+    .project-tag::before { content: '#'; opacity: 0.5; }
+    .project-arrow {
+      font-size: 20px;
+      color: var(--muted);
+      transition: color 0.3s, transform 0.3s;
+    }
+    .project-card:hover .project-arrow {
+      color: var(--accent);
+      transform: translate(4px, -4px);
+    }
+
+    /* contact */
+    .contact-inner {
+      border: 1px solid var(--border);
+      padding: 72px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-inner::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(139,111,255,0.06), transparent);
+      pointer-events: none;
+    }
+    .contact-inner .section-title { margin-bottom: 16px; }
+    .contact-inner p { color: var(--muted); margin-bottom: 40px; max-width: 400px; margin-left: auto; margin-right: auto; }
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* footer */
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* divider */
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+    }
+
+    /* glitch effect on hover for name */
+    .hero-name:hover .line1 {
+      animation: glitch 0.4s steps(2) forwards;
+    }
+    @keyframes glitch {
+      0%   { text-shadow: 2px 0 var(--accent2), -2px 0 var(--accent); }
+      25%  { text-shadow: -2px 0 var(--accent2), 2px 0 var(--accent); clip-path: inset(20% 0 60% 0); }
+      50%  { text-shadow: 2px 2px var(--accent2), -2px -2px var(--accent); }
+      75%  { clip-path: inset(70% 0 10% 0); }
+      100% { text-shadow: none; clip-path: none; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* reveal on scroll */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 640px) {
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .project-card { grid-template-columns: 1fr; padding: 28px; }
+      .contact-inner { padding: 40px 24px; }
+      nav { padding: 16px 20px; }
+      .nav-links { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="aurora"></div>
+
+<nav id="nav">
+  <a href="#" class="nav-logo">2026<span>/</span>04</a>
+  <ul class="nav-links">
+    <li><a href="#about">about</a></li>
+    <li><a href="#projects">work</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero-eyebrow">Independent Developer · 独立开发者</p>
+      <h1 class="hero-name">
+        <span class="line1">OpenLinux21</span>
+        <span class="line2">OpenLinux21</span>
+      </h1>
+      <p class="hero-desc">
+        在代码与感受之间游走。<br/>
+        <em>构建那些在未来仍然有意义的东西。</em><br/>
+        Building things that still matter at 3am.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-filled"><span>查看作品 →</span></a>
+        <a href="#contact" class="btn btn-ghost"><span>联系我</span></a>
+      </div>
+      <div class="scroll-line">scroll</div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">About</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">一个人，<br/>一台机器，<br/>一些想法。</h2>
+          <p>我是一名独立开发者。我不喜欢把自己装进某个标签里——有时候写后端，有时候做界面，偶尔也写一些<em>无人问津但自己很满意</em>的小工具。</p>
+          <p>喜欢那种某个东西<em>突然运转起来</em>的瞬间。喜欢把复杂的事情做得足够简单，然后再把简单的事情做得足够有趣。</p>
+          <div class="skills-list">
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Rust</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">WebGL</span>
+            <span class="skill-tag">CLI tools</span>
+          </div>
+        </div>
+        <div class="reveal" style="transition-delay: 0.15s">
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">cups of tea</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3am</span>
+              <span class="stat-label">best ideas</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">0</span>
+              <span class="stat-label">regrets</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">×∞</span>
+              <span class="stat-label">curiosity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">Work</div>
+      <h2 class="section-title reveal">做过的东西。</h2>
+      <div class="projects-grid reveal" style="margin-top: 48px; transition-delay: 0.1s">
+
+        <a href="#" class="project-card">
+          <div>
+            <span class="project-num">001</span>
+            <span class="project-title">Project Alpha</span>
+            <p class="project-desc">用一句话描述这个项目能做什么，以及它为什么存在。不需要面面俱到，只需要说清楚最重要的那件事。</p>
+            <div class="project-tags">
+              <span class="project-tag">react</span>
+              <span class="project-tag">typescript</span>
+              <span class="project-tag">open source</span>
+            </div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+
+        <a href="#" class="project-card">
+          <div>
+            <span class="project-num">002</span>
+            <span class="project-title">Project Beta</span>
+            <p class="project-desc">另一个项目的描述。保持简洁。让人好奇，但不要剧透太多——留一个理由让他们点进去。</p>
+            <div class="project-tags">
+              <span class="project-tag">rust</span>
+              <span class="project-tag">cli</span>
+              <span class="project-tag">tool</span>
+            </div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+
+        <a href="#" class="project-card">
+          <div>
+            <span class="project-num">003</span>
+            <span class="project-title">Project Gamma</span>
+            <p class="project-desc">把这里换成你真正做过的项目。这个模板足够灵活——你可以加更多卡片，也可以减少。</p>
+            <div class="project-tags">
+              <span class="project-tag">python</span>
+              <span class="project-tag">api</span>
+              <span class="project-tag">experiment</span>
+            </div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <div class="section-label" style="justify-content: center; margin-bottom: 32px;">Contact</div>
+        <h2 class="section-title">说点什么。</h2>
+        <p>做有趣的东西，或者只是想聊聊——都可以找我。</p>
+        <div class="contact-links">
+          <a href="mailto:your@email.com" class="btn btn-filled"><span>发邮件 →</span></a>
+          <a href="https://github.com/yourusername" class="btn btn-ghost"><span>GitHub</span></a>
+          <a href="https://twitter.com/yourusername" class="btn btn-ghost"><span>Twitter</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container" style="width:100%; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+    <span>© 2026 OpenLinux21 — made with intention</span>
+    <span style="color: var(--accent); font-size: 10px; letter-spacing: 0.2em;">ずっと真夜中でいいのに</span>
+  </div>
+</footer>
+
+<script>
+  // cursor
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+  function animateCursor() {
+    cursor.style.left = mx + 'px';
+    cursor.style.top = my + 'px';
+    rx += (mx - rx) * 0.12;
+    ry += (my - ry) * 0.12;
+    ring.style.left = rx + 'px';
+    ring.style.top = ry + 'px';
+    requestAnimationFrame(animateCursor);
+  }
+  animateCursor();
+  document.querySelectorAll('a, button, .skill-tag, .stat').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.transform = 'translate(-50%,-50%) scale(2.5)';
+      cursor.style.background = 'var(--accent2)';
+      ring.style.opacity = '0';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.style.transform = 'translate(-50%,-50%) scale(1)';
+      cursor.style.background = 'var(--accent)';
+      ring.style.opacity = '0.5';
+    });
+  });
+
+  // nav scroll
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
