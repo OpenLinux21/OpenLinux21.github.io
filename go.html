@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#status {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #000000;
+}
+
+#hiddenInput {
+    position: fixed;
+    left: -9999px;
+    top: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+</style>
+</head>
+<body>
+
+<div id="status">ok</div>
+<textarea id="hiddenInput"></textarea>
+
+<script>
+(function () {
+    const parts = [
+        "dmxlc3M6Ly8wMTQ0Y2I4ZC1iMWU2LTRkZWItODI5MC0wNzQzMjQ2NDA5NGJAMTA0LjE3LjEyMS4yMzoyMDg3P2VuY3J5cHRpb249bm9uZSZzZWN1cml0eT10bHMmc25pPXBvcDY0LmNjd3UuY2MmZnA9Y2hyb21lJmluc2VjdXJlPTAmYWxsb3dJbnNlY3VyZT0wJnR5cGU9d3MmaG9zdD1wb3A2NC5jY3d1LmNjJnBhdGg9JTJGJUNGJUU1JUFFJTk4JUU2JTk2JUI5JUU0JUJDJTk4JUU5JTgwJTg5Mgo=",
+        "dmxlc3M6Ly8wMTQ0Y2I4ZC1iMWU2LTRkZWItODI5MC0wNzQzMjQ2NDA5NGJAMTA0LjE4LjMyLjYzOjIwODc/ZW5jcnlwdGlvbj1ub25lJnNlY3VyaXR5PXRscyZzbmk9cG9wNjQuY2N3dS5jYyZmcD1jaHJvbWUmaW5zZWN1cmU9MCZhbGxvd0luc2VjdXJlPTAmdHlwZT13cyZob3N0PXBvcDY0LmNjd3UuY2MmcGF0aD0lMkYjQ0YlRTUlQUUlOTglRTYlOTYlQjklRTQlQkMlOTglRTklODAlODkzCg==",
+        "dmxlc3M6Ly8wMTQ0Y2I4ZC1iMWU2LTRkZWItODI5MC0wNzQzMjQ2NDA5NGJAMTcyLjY2LjAuMjI6NDQzP2VuY3J5cHRpb249bm9uZSZzZWN1cml0eT10bHMmc25pPXBvcDY0LmNjd3UuY2MmZnA9Y2hyb21lJmluc2VjdXJlPTAmYWxsb3dJbnNlY3VyZT0wJnR5cGU9d3MmaG9zdD1wb3A2NC5jY3d1LmNjJnBhdGg9JTJGJUNGJUU1JUFFJTk4JUU2JTk2JUI5JUU0JUJDJTk4JUU5JTgwJTg5NAo=",
+        "dmxlc3M6Ly8wMTQ0Y2I4ZC1iMWU2LTRkZWItODI5MC0wNzQzMjQ2NDA5NGJAMTA0LjE3LjE3NS4xNTM6NDQzP2VuY3J5cHRpb249bm9uZSZzZWN1cml0eT10bHMmc25pPXBvcDY0LmNjd3UuY2MmZnA9Y2hyb21lJmluc2VjdXJlPTAmYWxsb3dJbnNlY3VyZT0wJnR5cGU9d3MmaG9zdD1wb3A2NC5jY3d1LmNjJnBhdGg9JTJGJUNGJUU1JUFFJTk4JUU2JTk2JUI5JUU0JUJDJTk4JUU5JTgwJTg5NQo=",
+        "dmxlc3M6Ly8wMTQ0Y2I4ZC1iMWU2LTRkZWItODI5MC0wNzQzMjQ2NDA5NGJAMTk4LjQxLjIyMy4xMzI6MjA4Nz9lbmNyeXB0aW9uPW5vbmUmc2VjdXJpdHk9dGxzJnNuaT1wb3A2NC5jY3d1LmNjJmZwPWNocm9tZSZpbnNlY3VyZT0wJmFsbG93SW5zZWN1cmU9MCZ0eXBlPXdzJmhvc3Q9cG9wNjQuY2N3dS5jYyZwYXRoPSUyRiNDRiVFNSVBRSU5OCVFNiU5NiVCOSVFNCVCQyU5OCVFOSU4MCU4OTYK",
+        "dmxlc3M6Ly8wMTQ0Y2I4ZC1iMWU2LTRkZWItODI5MC0wNzQzMjQ2NDA5NGJAMTg4LjE2NC4yNDguMzY6MjA1Mz9lbmNyeXB0aW9uPW5vbmUmc2VjdXJpdHk9dGxzJnNuaT1wb3A2NC5jY3d1LmNjJmZwPWNocm9tZSZpbnNlY3VyZT0wJmFsbG93SW5zZWN1cmU9MCZ0eXBlPXdzJmhvc3Q9cG9wNjQuY2N3dS5jYyZwYXRoPSUyRiNDRiVFNSVBRSU5OCVFNiU5NiVCOSVFNCVCQyU5OCVFOSU4MCU4OTgK",
+        "dmxlc3M6Ly8wMTQ0Y2I4ZC1iMWU2LTRkZWItODI5MC0wNzQzMjQ2NDA5NGJAOC4zOS4xMjUuMTQ6MjA4Mz9lbmNyeXB0aW9uPW5vbmUmc2VjdXJpdHk9dGxzJnNuaT1wb3A2NC5jY3d1LmNjJmZwPWNocm9tZSZpbnNlY3VyZT0wJmFsbG93SW5zZWN1cmU9MCZ0eXBlPXdzJmhvc3Q9cG9wNjQuY2N3dS5jYyZwYXRoPSUyRiNDRiVFNSVBRSU5OCVFNiU5NiVCOSVFNCVCQyU5OCVFOSU4MCU4OTkK",
+        "dmxlc3M6Ly8wMTQ0Y2I4ZC1iMWU2LTRkZWItODI5MC0wNzQzMjQ2NDA5NGJAMTA0LjE3LjIxLjExMTo0NDM/ZW5jcnlwdGlvbj1ub25lJnNlY3VyaXR5PXRscyZzbmk9cG9wNjQuY2N3dS5jYyZmcD1jaHJvbWUmaW5zZWN1cmU9MCZhbGxvd0luc2VjdXJlPTAmdHlwZT13cyZob3N0PXBvcDY0LmNjd3UuY2MmcGF0aD0lMkYjQ0YlRTUlQUUlOTglRTYlOTYlQjklRTQlQkMlOTglRTklODAlODkxMAo=",
+        "dmxlc3M6Ly8wMTQ0Y2I4ZC1iMWU2LTRkZWItODI5MC0wNzQzMjQ2NDA5NGJAMTk4LjQxLjIwOC4zMDo0NDM/ZW5jcnlwdGlvbj1ub25lJnNlY3VyaXR5PXRscyZzbmk9cG9wNjQuY2N3dS5jYyZmcD1jaHJvbWUmaW5zZWN1cmU9MCZhbGxvd0luc2VjdXJlPTAmdHlwZT13cyZob3N0PXBvcDY0LmNjd3UuY2MmcGF0aD0lMkYjQ0YlRTUlQUUlOTglRTYlOTYlQjklRTQlQkMlOTglRTklODAlODkxMQo=",
+        "dmxlc3M6Ly8wMTQ0Y2I4ZC1iMWU2LTRkZWItODI5MC0wNzQzMjQ2NDA5NGJAMTA0LjE3LjEyMC4yMzQ6ODQ0Mz9lbmNyeXB0aW9uPW5vbmUmc2VjdXJpdHk9dGxzJnNuaT1wb3A2NC5jY3d1LmNjJmZwPWNocm9tZSZpbnNlY3VyZT0wJmFsbG93SW5zZWN1cmU9MCZ0eXBlPXdzJmhvc3Q9cG9wNjQuY2N3dS5jYyZwYXRoPSUyRiNDRiVFNSVBRSU5OCVFNiU5NiVCOSVFNCVCQyU5OCVFOSU4MCU4OTEyCg==",
+        "dmxlc3M6Ly8wMTQ0Y2I4ZC1iMWU2LTRkZWItODI5MC0wNzQzMjQ2NDA5NGJAMTA0LjE3LjI5LjE2NzoyMDk2P2VuY3J5cHRpb249bm9uZSZzZWN1cml0eT10bHMmc25pPXBvcDY0LmNjd3UuY2MmZnA9Y2hyb21lJmluc2VjdXJlPTAmYWxsb3dJbnNlY3VyZT0wJnR5cGU9d3MmaG9zdD1wb3A2NC5jY3d1LmNjJnBhdGg9JTJGJUNGJUU1JUFFJTk4JUU2JTk2JUI5JUU0JUJDJTk4JUU5JTgwJTg5MTMK",
+        "dmxlc3M6Ly8wMTQ0Y2I4ZC1iMWU2LTRkZWItODI5MC0wNzQzMjQ2NDA5NGJAOC4zNS4yMTEuMzI6NDQzP2VuY3J5cHRpb249bm9uZSZzZWN1cml0eT10bHMmc25pPXBvcDY0LmNjd3UuY2MmZnA9Y2hyb21lJmluc2VjdXJlPTAmYWxsb3dJbnNlY3VyZT0wJnR5cGU9d3MmaG9zdD1wb3A2NC5jY3d1LmNjJnBhdGg9JTJGJUNGJUU1JUFFJTk4JUU2JTk2JUI5JUU0JUJDJTk4JUU5JTgwJTg5MTQK",
+        "dmxlc3M6Ly8wMTQ0Y2I4ZC1iMWU2LTRkZWItODI5MC0wNzQzMjQ2NDA5NGJAMTYyLjE1OS40NS42OjIwODc/ZW5jcnlwdGlvbj1ub25lJnNlY3VyaXR5PXRscyZzbmk9cG9wNjQuY2N3dS5jYyZmcD1jaHJvbWUmaW5zZWN1cmU9MCZhbGxvd0luc2VjdXJlPTAmdHlwZT13cyZob3N0PXBvcDY0LmNjd3UuY2MmcGF0aD0lMkYjQ0YlRTUlQUUlOTglRTYlOTYlQjklRTQlQkMlOTglRTklODAlODkxNQo=",
+        "dmxlc3M6Ly8wMTQ0Y2I4ZC1iMWU2LTRkZWItODI5MC0wNzQzMjQ2NDA5NGJAMTYyLjE1OS4zOS4xNzk6MjA5Nj9lbmNyeXB0aW9uPW5vbmUmc2VjdXJpdHk9dGxzJnNuaT1wb3A2NC5jY3d1LmNjJmZwPWNocm9tZSZpbnNlY3VyZT0wJmFsbG93SW5zZWN1cmU9MCZ0eXBlPXdzJmhvc3Q9cG9wNjQuY2N3dS5jYyZwYXRoPSUyRiNDRiVFNSVBRSU5OCVFNiU5NiVCOSVFNCVCQyU5OCVFOSU4MCU4OTE2"
+    ];
+
+    let started = false;
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    function decodeBase64Utf8(base64Text) {
+        const binary = atob(base64Text);
+        const bytes = new Uint8Array(binary.length);
+
+        for (let i = 0; i < binary.length; i++) {
+            bytes[i] = binary.charCodeAt(i);
+        }
+
+        return new TextDecoder("utf-8").decode(bytes);
+    }
+
+    function getText() {
+        return parts.map(function (item) {
+            return decodeBase64Utf8(item).trim();
+        }).join("\n");
+    }
+
+    async function writeClipboardModern(value) {
+        if (!navigator.clipboard || !window.isSecureContext) {
+            throw new Error("Clipboard API unavailable");
+        }
+
+        await navigator.clipboard.writeText(value);
+    }
+
+    function writeClipboardFallback(value) {
+        const input = document.getElementById("hiddenInput");
+        input.value = value;
+        input.focus();
+        input.select();
+        input.setSelectionRange(0, input.value.length);
+
+        const ok = document.execCommand("copy");
+
+        input.blur();
+
+        if (!ok) {
+            throw new Error("execCommand copy failed");
+        }
+    }
+
+    async function writeClipboard(value) {
+        try {
+            await writeClipboardModern(value);
+            return true;
+        } catch (e) {
+            try {
+                writeClipboardFallback(value);
+                return true;
+            } catch (e2) {
+                return false;
+            }
+        }
+    }
+
+    async function run() {
+        if (started) {
+            return;
+        }
+
+        started = true;
+
+        await sleep(1000);
+
+        const text = getText();
+        let successCount = 0;
+
+        for (let i = 0; i < 3; i++) {
+            const ok = await writeClipboard(text);
+
+            if (ok) {
+                successCount++;
+            }
+
+            if (i < 2) {
+                await sleep(500);
+            }
+        }
+
+        if (successCount > 0) {
+            const status = document.getElementById("status");
+            status.style.display = "flex";
+        } else {
+            started = false;
+        }
+    }
+
+    window.addEventListener("load", run);
+
+    document.addEventListener("click", run);
+    document.addEventListener("touchstart", run);
+    document.addEventListener("keydown", run);
+})();
+</script>
+
+</body>
+</html>
