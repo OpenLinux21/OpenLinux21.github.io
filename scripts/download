@@ -1,0 +1,23 @@
+aria2c \
+  -x 8 \
+  -s 8 \
+  -k 4M \
+  --continue=true \
+  --max-tries=10 \
+  --retry-wait=5 \
+  --timeout=60 \
+  --connect-timeout=20 \
+  --header='accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
+  --header='accept-language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7' \
+  --header='priority: u=0, i' \
+  --header='sec-ch-ua: "Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"' \
+  --header='sec-ch-ua-mobile: ?0' \
+  --header='sec-ch-ua-platform: "Linux"' \
+  --header='sec-fetch-dest: document' \
+  --header='sec-fetch-mode: navigate' \
+  --header='sec-fetch-site: none' \
+  --header='sec-fetch-user: ?1' \
+  --header='upgrade-insecure-requests: 1' \
+  --header='user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36' \
+  -o 'qwen-image-2.1-UC-BF16.gguf' \
+  'https://cas-bridge.xethub.hf.co/xet-bridge-us/6ab000f1a587030ee97d13cf/fe53d3230b49c0eedfca50549af4159e0318861ce006e53b25eda7184791789c?Expires=1791304644&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jYXMtYnJpZGdlLnhldGh1Yi5oZi5jby94ZXQtYnJpZGdlLXVzLzZhYjAwMGYxYTU4NzAzMGVlOTdkMTNjZi9mZTUzZDMyMzBiNDljMGVlZGZjYTUwNTQ5YWY0MTU5ZTAzMTg4NjFjZTAwNmU1M2IyNWVkYTcxODQ3OTE3ODljKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5MTMwNDY0NH19fV19&Signature=MEUCIGMpNySZuWvBXcv5ok7HRGgjWKfKlYjJ-m-9kct8nNNiAiEAr%7EG8Sf3aXKCgSZntOw-37%7EzG1R58Y5Va4y0RLNhP2QY_&Key-Pair-Id=K3EPXBYC3CKDRZ&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27qwen-image-2.1-UC-BF16.gguf%3B+filename%3D%22qwen-image-2.1-UC-BF16.gguf%22%3B&X-Xet-Cas-Uid=62171e3b6a99db28e0b3159d&xip=_4MbHnvJL8Q&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=cas%2F20261006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261006T153724Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=4be51a99504494c615c5*'
